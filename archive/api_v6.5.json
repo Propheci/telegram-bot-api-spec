@@ -1,11 +1,11 @@
 {
   "version": "Bot API 6.5",
   "release_date": "February 3, 2023",
-  "changelog": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#february-3-2023",
+  "changelog": "https://core.telegram.org/bots/api#february-3-2023",
   "methods": {
     "getUpdates": {
       "name": "getUpdates",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#getupdates",
+      "href": "https://core.telegram.org/bots/api#getupdates",
       "description": [
         "Use this method to receive incoming updates using long polling (wiki). Returns an Array of Update objects."
       ],
@@ -49,7 +49,7 @@
     },
     "setWebhook": {
       "name": "setWebhook",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#setwebhook",
+      "href": "https://core.telegram.org/bots/api#setwebhook",
       "description": [
         "Use this method to specify a URL and receive incoming updates via an outgoing webhook. Whenever there is an update for the bot, we will send an HTTPS POST request to the specified URL, containing a JSON-serialized Update. In case of an unsuccessful request, we will give up after a reasonable amount of attempts. Returns True on success.",
         "If you'd like to make sure that the webhook was set by you, you can specify secret data in the parameter secret_token. If specified, the request will contain a header \"X-Telegram-Bot-Api-Secret-Token\" with the secret token as content."
@@ -118,7 +118,7 @@
     },
     "deleteWebhook": {
       "name": "deleteWebhook",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#deletewebhook",
+      "href": "https://core.telegram.org/bots/api#deletewebhook",
       "description": [
         "Use this method to remove webhook integration if you decide to switch back to getUpdates. Returns True on success."
       ],
@@ -138,7 +138,7 @@
     },
     "getWebhookInfo": {
       "name": "getWebhookInfo",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#getwebhookinfo",
+      "href": "https://core.telegram.org/bots/api#getwebhookinfo",
       "description": [
         "Use this method to get current webhook status. Requires no parameters. On success, returns a WebhookInfo object. If the bot is using getUpdates, will return an object with the url field empty."
       ],
@@ -148,7 +148,7 @@
     },
     "getMe": {
       "name": "getMe",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#getme",
+      "href": "https://core.telegram.org/bots/api#getme",
       "description": [
         "A simple method for testing your bot's authentication token. Requires no parameters. Returns basic information about the bot in form of a User object."
       ],
@@ -158,7 +158,7 @@
     },
     "logOut": {
       "name": "logOut",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#logout",
+      "href": "https://core.telegram.org/bots/api#logout",
       "description": [
         "Use this method to log out from the cloud Bot API server before launching the bot locally. You must log out the bot before running it locally, otherwise there is no guarantee that the bot will receive updates. After a successful call, you can immediately log in on a local server, but will not be able to log in back to the cloud Bot API server for 10 minutes. Returns True on success. Requires no parameters."
       ],
@@ -168,7 +168,7 @@
     },
     "close": {
       "name": "close",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#close",
+      "href": "https://core.telegram.org/bots/api#close",
       "description": [
         "Use this method to close the bot instance before moving it from one local server to another. You need to delete the webhook before calling this method to ensure that the bot isn't launched again after server restart. The method will return error 429 in the first 10 minutes after the bot is launched. Returns True on success. Requires no parameters."
       ],
@@ -178,7 +178,7 @@
     },
     "sendMessage": {
       "name": "sendMessage",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sendmessage",
+      "href": "https://core.telegram.org/bots/api#sendmessage",
       "description": [
         "Use this method to send text messages. On success, the sent Message is returned."
       ],
@@ -282,7 +282,7 @@
     },
     "forwardMessage": {
       "name": "forwardMessage",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#forwardmessage",
+      "href": "https://core.telegram.org/bots/api#forwardmessage",
       "description": [
         "Use this method to forward messages of any kind. Service messages can't be forwarded. On success, the sent Message is returned."
       ],
@@ -344,7 +344,7 @@
     },
     "copyMessage": {
       "name": "copyMessage",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#copymessage",
+      "href": "https://core.telegram.org/bots/api#copymessage",
       "description": [
         "Use this method to copy messages of any kind. Service messages and invoice messages can't be copied. A quiz poll can be copied only if the value of the field correct_option_id is known to the bot. The method is analogous to the method forwardMessage, but the copied message doesn't have a link to the original message. Returns the MessageId of the sent message on success."
       ],
@@ -457,7 +457,7 @@
     },
     "sendPhoto": {
       "name": "sendPhoto",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sendphoto",
+      "href": "https://core.telegram.org/bots/api#sendphoto",
       "description": [
         "Use this method to send photos. On success, the sent Message is returned."
       ],
@@ -489,7 +489,7 @@
             "String"
           ],
           "required": true,
-          "description": "Photo to send. Pass a file_id as String to send a photo that exists on the Telegram servers (recommended), pass an HTTP URL as a String for Telegram to get a photo from the Internet, or upload a new photo using multipart/form-data. The photo must be at most 10 MB in size. The photo's width and height must not exceed 10000 in total. Width and height ratio must be at most 20. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files"
+          "description": "Photo to send. Pass a file_id as String to send a photo that exists on the Telegram servers (recommended), pass an HTTP URL as a String for Telegram to get a photo from the Internet, or upload a new photo using multipart/form-data. The photo must be at most 10 MB in size. The photo's width and height must not exceed 10000 in total. Width and height ratio must be at most 20. More information on Sending Files: https://core.telegram.org/bots/api#sending-files"
         },
         {
           "name": "caption",
@@ -570,7 +570,7 @@
     },
     "sendAudio": {
       "name": "sendAudio",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sendaudio",
+      "href": "https://core.telegram.org/bots/api#sendaudio",
       "description": [
         "Use this method to send audio files, if you want Telegram clients to display them in the music player. Your audio must be in the .MP3 or .M4A format. On success, the sent Message is returned. Bots can currently send audio files of up to 50 MB in size, this limit may be changed in the future.",
         "For sending voice messages, use the sendVoice method instead."
@@ -603,7 +603,7 @@
             "String"
           ],
           "required": true,
-          "description": "Audio file to send. Pass a file_id as String to send an audio file that exists on the Telegram servers (recommended), pass an HTTP URL as a String for Telegram to get an audio file from the Internet, or upload a new one using multipart/form-data. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files"
+          "description": "Audio file to send. Pass a file_id as String to send an audio file that exists on the Telegram servers (recommended), pass an HTTP URL as a String for Telegram to get an audio file from the Internet, or upload a new one using multipart/form-data. More information on Sending Files: https://core.telegram.org/bots/api#sending-files"
         },
         {
           "name": "caption",
@@ -660,7 +660,7 @@
             "String"
           ],
           "required": false,
-          "description": "Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass \"attach://<file_attach_name>\" if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files"
+          "description": "Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass \"attach://<file_attach_name>\" if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More information on Sending Files: https://core.telegram.org/bots/api#sending-files"
         },
         {
           "name": "disable_notification",
@@ -709,7 +709,7 @@
     },
     "sendDocument": {
       "name": "sendDocument",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#senddocument",
+      "href": "https://core.telegram.org/bots/api#senddocument",
       "description": [
         "Use this method to send general files. On success, the sent Message is returned. Bots can currently send files of any type of up to 50 MB in size, this limit may be changed in the future."
       ],
@@ -741,7 +741,7 @@
             "String"
           ],
           "required": true,
-          "description": "File to send. Pass a file_id as String to send a file that exists on the Telegram servers (recommended), pass an HTTP URL as a String for Telegram to get a file from the Internet, or upload a new one using multipart/form-data. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files"
+          "description": "File to send. Pass a file_id as String to send a file that exists on the Telegram servers (recommended), pass an HTTP URL as a String for Telegram to get a file from the Internet, or upload a new one using multipart/form-data. More information on Sending Files: https://core.telegram.org/bots/api#sending-files"
         },
         {
           "name": "thumb",
@@ -750,7 +750,7 @@
             "String"
           ],
           "required": false,
-          "description": "Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass \"attach://<file_attach_name>\" if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files"
+          "description": "Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass \"attach://<file_attach_name>\" if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More information on Sending Files: https://core.telegram.org/bots/api#sending-files"
         },
         {
           "name": "caption",
@@ -831,7 +831,7 @@
     },
     "sendVideo": {
       "name": "sendVideo",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sendvideo",
+      "href": "https://core.telegram.org/bots/api#sendvideo",
       "description": [
         "Use this method to send video files, Telegram clients support MPEG4 videos (other formats may be sent as Document). On success, the sent Message is returned. Bots can currently send video files of up to 50 MB in size, this limit may be changed in the future."
       ],
@@ -863,7 +863,7 @@
             "String"
           ],
           "required": true,
-          "description": "Video to send. Pass a file_id as String to send a video that exists on the Telegram servers (recommended), pass an HTTP URL as a String for Telegram to get a video from the Internet, or upload a new video using multipart/form-data. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files"
+          "description": "Video to send. Pass a file_id as String to send a video that exists on the Telegram servers (recommended), pass an HTTP URL as a String for Telegram to get a video from the Internet, or upload a new video using multipart/form-data. More information on Sending Files: https://core.telegram.org/bots/api#sending-files"
         },
         {
           "name": "duration",
@@ -896,7 +896,7 @@
             "String"
           ],
           "required": false,
-          "description": "Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass \"attach://<file_attach_name>\" if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files"
+          "description": "Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass \"attach://<file_attach_name>\" if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More information on Sending Files: https://core.telegram.org/bots/api#sending-files"
         },
         {
           "name": "caption",
@@ -985,7 +985,7 @@
     },
     "sendAnimation": {
       "name": "sendAnimation",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sendanimation",
+      "href": "https://core.telegram.org/bots/api#sendanimation",
       "description": [
         "Use this method to send animation files (GIF or H.264/MPEG-4 AVC video without sound). On success, the sent Message is returned. Bots can currently send animation files of up to 50 MB in size, this limit may be changed in the future."
       ],
@@ -1017,7 +1017,7 @@
             "String"
           ],
           "required": true,
-          "description": "Animation to send. Pass a file_id as String to send an animation that exists on the Telegram servers (recommended), pass an HTTP URL as a String for Telegram to get an animation from the Internet, or upload a new animation using multipart/form-data. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files"
+          "description": "Animation to send. Pass a file_id as String to send an animation that exists on the Telegram servers (recommended), pass an HTTP URL as a String for Telegram to get an animation from the Internet, or upload a new animation using multipart/form-data. More information on Sending Files: https://core.telegram.org/bots/api#sending-files"
         },
         {
           "name": "duration",
@@ -1050,7 +1050,7 @@
             "String"
           ],
           "required": false,
-          "description": "Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass \"attach://<file_attach_name>\" if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files"
+          "description": "Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass \"attach://<file_attach_name>\" if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More information on Sending Files: https://core.telegram.org/bots/api#sending-files"
         },
         {
           "name": "caption",
@@ -1131,7 +1131,7 @@
     },
     "sendVoice": {
       "name": "sendVoice",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sendvoice",
+      "href": "https://core.telegram.org/bots/api#sendvoice",
       "description": [
         "Use this method to send audio files, if you want Telegram clients to display the file as a playable voice message. For this to work, your audio must be in an .OGG file encoded with OPUS (other formats may be sent as Audio or Document). On success, the sent Message is returned. Bots can currently send voice messages of up to 50 MB in size, this limit may be changed in the future."
       ],
@@ -1163,7 +1163,7 @@
             "String"
           ],
           "required": true,
-          "description": "Audio file to send. Pass a file_id as String to send a file that exists on the Telegram servers (recommended), pass an HTTP URL as a String for Telegram to get a file from the Internet, or upload a new one using multipart/form-data. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files"
+          "description": "Audio file to send. Pass a file_id as String to send a file that exists on the Telegram servers (recommended), pass an HTTP URL as a String for Telegram to get a file from the Internet, or upload a new one using multipart/form-data. More information on Sending Files: https://core.telegram.org/bots/api#sending-files"
         },
         {
           "name": "caption",
@@ -1244,7 +1244,7 @@
     },
     "sendVideoNote": {
       "name": "sendVideoNote",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sendvideonote",
+      "href": "https://core.telegram.org/bots/api#sendvideonote",
       "description": [
         "As of v.4.0, Telegram clients support rounded square MPEG4 videos of up to 1 minute long. Use this method to send video messages. On success, the sent Message is returned."
       ],
@@ -1276,7 +1276,7 @@
             "String"
           ],
           "required": true,
-          "description": "Video note to send. Pass a file_id as String to send a video note that exists on the Telegram servers (recommended) or upload a new video using multipart/form-data. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files. Sending video notes by a URL is currently unsupported"
+          "description": "Video note to send. Pass a file_id as String to send a video note that exists on the Telegram servers (recommended) or upload a new video using multipart/form-data. More information on Sending Files: https://core.telegram.org/bots/api#sending-files. Sending video notes by a URL is currently unsupported"
         },
         {
           "name": "duration",
@@ -1301,7 +1301,7 @@
             "String"
           ],
           "required": false,
-          "description": "Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass \"attach://<file_attach_name>\" if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files"
+          "description": "Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass \"attach://<file_attach_name>\" if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More information on Sending Files: https://core.telegram.org/bots/api#sending-files"
         },
         {
           "name": "disable_notification",
@@ -1350,7 +1350,7 @@
     },
     "sendMediaGroup": {
       "name": "sendMediaGroup",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sendmediagroup",
+      "href": "https://core.telegram.org/bots/api#sendmediagroup",
       "description": [
         "Use this method to send a group of photos, videos, documents or audios as an album. Documents and audio files can be only grouped in an album with messages of the same type. On success, an array of Messages that were sent is returned."
       ],
@@ -1422,7 +1422,7 @@
     },
     "sendLocation": {
       "name": "sendLocation",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sendlocation",
+      "href": "https://core.telegram.org/bots/api#sendlocation",
       "description": [
         "Use this method to send point on the map. On success, the sent Message is returned."
       ],
@@ -1542,7 +1542,7 @@
     },
     "editMessageLiveLocation": {
       "name": "editMessageLiveLocation",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#editmessagelivelocation",
+      "href": "https://core.telegram.org/bots/api#editmessagelivelocation",
       "description": [
         "Use this method to edit live location messages. A location can be edited until its live_period expires or editing is explicitly disabled by a call to stopMessageLiveLocation. On success, if the edited message is not an inline message, the edited Message is returned, otherwise True is returned."
       ],
@@ -1628,7 +1628,7 @@
     },
     "stopMessageLiveLocation": {
       "name": "stopMessageLiveLocation",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#stopmessagelivelocation",
+      "href": "https://core.telegram.org/bots/api#stopmessagelivelocation",
       "description": [
         "Use this method to stop updating a live location message before live_period expires. On success, if the message is not an inline message, the edited Message is returned, otherwise True is returned."
       ],
@@ -1674,7 +1674,7 @@
     },
     "sendVenue": {
       "name": "sendVenue",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sendvenue",
+      "href": "https://core.telegram.org/bots/api#sendvenue",
       "description": [
         "Use this method to send information about a venue. On success, the sent Message is returned."
       ],
@@ -1810,7 +1810,7 @@
     },
     "sendContact": {
       "name": "sendContact",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sendcontact",
+      "href": "https://core.telegram.org/bots/api#sendcontact",
       "description": [
         "Use this method to send phone contacts. On success, the sent Message is returned."
       ],
@@ -1914,7 +1914,7 @@
     },
     "sendPoll": {
       "name": "sendPoll",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sendpoll",
+      "href": "https://core.telegram.org/bots/api#sendpoll",
       "description": [
         "Use this method to send a native poll. On success, the sent Message is returned."
       ],
@@ -2082,7 +2082,7 @@
     },
     "sendDice": {
       "name": "sendDice",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#senddice",
+      "href": "https://core.telegram.org/bots/api#senddice",
       "description": [
         "Use this method to send an animated emoji that will display a random value. On success, the sent Message is returned."
       ],
@@ -2162,7 +2162,7 @@
     },
     "sendChatAction": {
       "name": "sendChatAction",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sendchataction",
+      "href": "https://core.telegram.org/bots/api#sendchataction",
       "description": [
         "Use this method when you need to tell the user that something is happening on the bot's side. The status is set for 5 seconds or less (when a message arrives from your bot, Telegram clients clear its typing status). Returns True on success.",
         "We only recommend using this method when a response from the bot will take a noticeable amount of time to arrive."
@@ -2200,7 +2200,7 @@
     },
     "getUserProfilePhotos": {
       "name": "getUserProfilePhotos",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#getuserprofilephotos",
+      "href": "https://core.telegram.org/bots/api#getuserprofilephotos",
       "description": [
         "Use this method to get a list of profile pictures for a user. Returns a UserProfilePhotos object."
       ],
@@ -2236,7 +2236,7 @@
     },
     "getFile": {
       "name": "getFile",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#getfile",
+      "href": "https://core.telegram.org/bots/api#getfile",
       "description": [
         "Use this method to get basic information about a file and prepare it for downloading. For the moment, bots can download files of up to 20MB in size. On success, a File object is returned. The file can then be downloaded via the link https://api.telegram.org/file/bot<token>/<file_path>, where <file_path> is taken from the response. It is guaranteed that the link will be valid for at least 1 hour. When the link expires, a new one can be requested by calling getFile again.",
         "Note: This function may not preserve the original file name and MIME type. You should save the file's MIME type and name (if available) when the File object is received."
@@ -2257,7 +2257,7 @@
     },
     "banChatMember": {
       "name": "banChatMember",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#banchatmember",
+      "href": "https://core.telegram.org/bots/api#banchatmember",
       "description": [
         "Use this method to ban a user in a group, a supergroup or a channel. In the case of supergroups and channels, the user will not be able to return to the chat on their own using invite links, etc., unless unbanned first. The bot must be an administrator in the chat for this to work and must have the appropriate administrator rights. Returns True on success."
       ],
@@ -2302,7 +2302,7 @@
     },
     "unbanChatMember": {
       "name": "unbanChatMember",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#unbanchatmember",
+      "href": "https://core.telegram.org/bots/api#unbanchatmember",
       "description": [
         "Use this method to unban a previously banned user in a supergroup or channel. The user will not return to the group or channel automatically, but will be able to join via link, etc. The bot must be an administrator for this to work. By default, this method guarantees that after the call the user is not a member of the chat, but will be able to join it. So if the user is a member of the chat they will also be removed from the chat. If you don't want this, use the parameter only_if_banned. Returns True on success."
       ],
@@ -2339,7 +2339,7 @@
     },
     "restrictChatMember": {
       "name": "restrictChatMember",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#restrictchatmember",
+      "href": "https://core.telegram.org/bots/api#restrictchatmember",
       "description": [
         "Use this method to restrict a user in a supergroup. The bot must be an administrator in the supergroup for this to work and must have the appropriate administrator rights. Pass True for all permissions to lift restrictions from a user. Returns True on success."
       ],
@@ -2392,7 +2392,7 @@
     },
     "promoteChatMember": {
       "name": "promoteChatMember",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#promotechatmember",
+      "href": "https://core.telegram.org/bots/api#promotechatmember",
       "description": [
         "Use this method to promote or demote a user in a supergroup or a channel. The bot must be an administrator in the chat for this to work and must have the appropriate administrator rights. Pass False for all boolean parameters to demote a user. Returns True on success."
       ],
@@ -2517,7 +2517,7 @@
     },
     "setChatAdministratorCustomTitle": {
       "name": "setChatAdministratorCustomTitle",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#setchatadministratorcustomtitle",
+      "href": "https://core.telegram.org/bots/api#setchatadministratorcustomtitle",
       "description": [
         "Use this method to set a custom title for an administrator in a supergroup promoted by the bot. Returns True on success."
       ],
@@ -2554,7 +2554,7 @@
     },
     "banChatSenderChat": {
       "name": "banChatSenderChat",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#banchatsenderchat",
+      "href": "https://core.telegram.org/bots/api#banchatsenderchat",
       "description": [
         "Use this method to ban a channel chat in a supergroup or a channel. Until the chat is unbanned, the owner of the banned chat won't be able to send messages on behalf of any of their channels. The bot must be an administrator in the supergroup or channel for this to work and must have the appropriate administrator rights. Returns True on success."
       ],
@@ -2583,7 +2583,7 @@
     },
     "unbanChatSenderChat": {
       "name": "unbanChatSenderChat",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#unbanchatsenderchat",
+      "href": "https://core.telegram.org/bots/api#unbanchatsenderchat",
       "description": [
         "Use this method to unban a previously banned channel chat in a supergroup or channel. The bot must be an administrator for this to work and must have the appropriate administrator rights. Returns True on success."
       ],
@@ -2612,7 +2612,7 @@
     },
     "setChatPermissions": {
       "name": "setChatPermissions",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#setchatpermissions",
+      "href": "https://core.telegram.org/bots/api#setchatpermissions",
       "description": [
         "Use this method to set default chat permissions for all members. The bot must be an administrator in the group or a supergroup for this to work and must have the can_restrict_members administrator rights. Returns True on success."
       ],
@@ -2649,7 +2649,7 @@
     },
     "exportChatInviteLink": {
       "name": "exportChatInviteLink",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#exportchatinvitelink",
+      "href": "https://core.telegram.org/bots/api#exportchatinvitelink",
       "description": [
         "Use this method to generate a new primary invite link for a chat; any previously generated primary link is revoked. The bot must be an administrator in the chat for this to work and must have the appropriate administrator rights. Returns the new invite link as String on success."
       ],
@@ -2670,7 +2670,7 @@
     },
     "createChatInviteLink": {
       "name": "createChatInviteLink",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#createchatinvitelink",
+      "href": "https://core.telegram.org/bots/api#createchatinvitelink",
       "description": [
         "Use this method to create an additional invite link for a chat. The bot must be an administrator in the chat for this to work and must have the appropriate administrator rights. The link can be revoked using the method revokeChatInviteLink. Returns the new invite link as ChatInviteLink object."
       ],
@@ -2723,7 +2723,7 @@
     },
     "editChatInviteLink": {
       "name": "editChatInviteLink",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#editchatinvitelink",
+      "href": "https://core.telegram.org/bots/api#editchatinvitelink",
       "description": [
         "Use this method to edit a non-primary invite link created by the bot. The bot must be an administrator in the chat for this to work and must have the appropriate administrator rights. Returns the edited invite link as a ChatInviteLink object."
       ],
@@ -2784,7 +2784,7 @@
     },
     "revokeChatInviteLink": {
       "name": "revokeChatInviteLink",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#revokechatinvitelink",
+      "href": "https://core.telegram.org/bots/api#revokechatinvitelink",
       "description": [
         "Use this method to revoke an invite link created by the bot. If the primary link is revoked, a new link is automatically generated. The bot must be an administrator in the chat for this to work and must have the appropriate administrator rights. Returns the revoked invite link as ChatInviteLink object."
       ],
@@ -2813,7 +2813,7 @@
     },
     "approveChatJoinRequest": {
       "name": "approveChatJoinRequest",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#approvechatjoinrequest",
+      "href": "https://core.telegram.org/bots/api#approvechatjoinrequest",
       "description": [
         "Use this method to approve a chat join request. The bot must be an administrator in the chat for this to work and must have the can_invite_users administrator right. Returns True on success."
       ],
@@ -2842,7 +2842,7 @@
     },
     "declineChatJoinRequest": {
       "name": "declineChatJoinRequest",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#declinechatjoinrequest",
+      "href": "https://core.telegram.org/bots/api#declinechatjoinrequest",
       "description": [
         "Use this method to decline a chat join request. The bot must be an administrator in the chat for this to work and must have the can_invite_users administrator right. Returns True on success."
       ],
@@ -2871,7 +2871,7 @@
     },
     "setChatPhoto": {
       "name": "setChatPhoto",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#setchatphoto",
+      "href": "https://core.telegram.org/bots/api#setchatphoto",
       "description": [
         "Use this method to set a new profile photo for the chat. Photos can't be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate administrator rights. Returns True on success."
       ],
@@ -2900,7 +2900,7 @@
     },
     "deleteChatPhoto": {
       "name": "deleteChatPhoto",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#deletechatphoto",
+      "href": "https://core.telegram.org/bots/api#deletechatphoto",
       "description": [
         "Use this method to delete a chat photo. Photos can't be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate administrator rights. Returns True on success."
       ],
@@ -2921,7 +2921,7 @@
     },
     "setChatTitle": {
       "name": "setChatTitle",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#setchattitle",
+      "href": "https://core.telegram.org/bots/api#setchattitle",
       "description": [
         "Use this method to change the title of a chat. Titles can't be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate administrator rights. Returns True on success."
       ],
@@ -2950,7 +2950,7 @@
     },
     "setChatDescription": {
       "name": "setChatDescription",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#setchatdescription",
+      "href": "https://core.telegram.org/bots/api#setchatdescription",
       "description": [
         "Use this method to change the description of a group, a supergroup or a channel. The bot must be an administrator in the chat for this to work and must have the appropriate administrator rights. Returns True on success."
       ],
@@ -2979,7 +2979,7 @@
     },
     "pinChatMessage": {
       "name": "pinChatMessage",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#pinchatmessage",
+      "href": "https://core.telegram.org/bots/api#pinchatmessage",
       "description": [
         "Use this method to add a message to the list of pinned messages in a chat. If the chat is not a private chat, the bot must be an administrator in the chat for this to work and must have the 'can_pin_messages' administrator right in a supergroup or 'can_edit_messages' administrator right in a channel. Returns True on success."
       ],
@@ -3016,7 +3016,7 @@
     },
     "unpinChatMessage": {
       "name": "unpinChatMessage",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#unpinchatmessage",
+      "href": "https://core.telegram.org/bots/api#unpinchatmessage",
       "description": [
         "Use this method to remove a message from the list of pinned messages in a chat. If the chat is not a private chat, the bot must be an administrator in the chat for this to work and must have the 'can_pin_messages' administrator right in a supergroup or 'can_edit_messages' administrator right in a channel. Returns True on success."
       ],
@@ -3045,7 +3045,7 @@
     },
     "unpinAllChatMessages": {
       "name": "unpinAllChatMessages",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#unpinallchatmessages",
+      "href": "https://core.telegram.org/bots/api#unpinallchatmessages",
       "description": [
         "Use this method to clear the list of pinned messages in a chat. If the chat is not a private chat, the bot must be an administrator in the chat for this to work and must have the 'can_pin_messages' administrator right in a supergroup or 'can_edit_messages' administrator right in a channel. Returns True on success."
       ],
@@ -3066,7 +3066,7 @@
     },
     "leaveChat": {
       "name": "leaveChat",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#leavechat",
+      "href": "https://core.telegram.org/bots/api#leavechat",
       "description": [
         "Use this method for your bot to leave a group, supergroup or channel. Returns True on success."
       ],
@@ -3087,7 +3087,7 @@
     },
     "getChat": {
       "name": "getChat",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#getchat",
+      "href": "https://core.telegram.org/bots/api#getchat",
       "description": [
         "Use this method to get up to date information about the chat (current name of the user for one-on-one conversations, current username of a user, group or channel, etc.). Returns a Chat object on success."
       ],
@@ -3108,7 +3108,7 @@
     },
     "getChatAdministrators": {
       "name": "getChatAdministrators",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#getchatadministrators",
+      "href": "https://core.telegram.org/bots/api#getchatadministrators",
       "description": [
         "Use this method to get a list of administrators in a chat, which aren't bots. Returns an Array of ChatMember objects."
       ],
@@ -3129,7 +3129,7 @@
     },
     "getChatMemberCount": {
       "name": "getChatMemberCount",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#getchatmembercount",
+      "href": "https://core.telegram.org/bots/api#getchatmembercount",
       "description": [
         "Use this method to get the number of members in a chat. Returns Int on success."
       ],
@@ -3150,7 +3150,7 @@
     },
     "getChatMember": {
       "name": "getChatMember",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#getchatmember",
+      "href": "https://core.telegram.org/bots/api#getchatmember",
       "description": [
         "Use this method to get information about a member of a chat. The method is only guaranteed to work for other users if the bot is an administrator in the chat. Returns a ChatMember object on success."
       ],
@@ -3179,7 +3179,7 @@
     },
     "setChatStickerSet": {
       "name": "setChatStickerSet",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#setchatstickerset",
+      "href": "https://core.telegram.org/bots/api#setchatstickerset",
       "description": [
         "Use this method to set a new group sticker set for a supergroup. The bot must be an administrator in the chat for this to work and must have the appropriate administrator rights. Use the field can_set_sticker_set optionally returned in getChat requests to check if the bot can use this method. Returns True on success."
       ],
@@ -3208,7 +3208,7 @@
     },
     "deleteChatStickerSet": {
       "name": "deleteChatStickerSet",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#deletechatstickerset",
+      "href": "https://core.telegram.org/bots/api#deletechatstickerset",
       "description": [
         "Use this method to delete a group sticker set from a supergroup. The bot must be an administrator in the chat for this to work and must have the appropriate administrator rights. Use the field can_set_sticker_set optionally returned in getChat requests to check if the bot can use this method. Returns True on success."
       ],
@@ -3229,7 +3229,7 @@
     },
     "getForumTopicIconStickers": {
       "name": "getForumTopicIconStickers",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#getforumtopiciconstickers",
+      "href": "https://core.telegram.org/bots/api#getforumtopiciconstickers",
       "description": [
         "Use this method to get custom emoji stickers, which can be used as a forum topic icon by any user. Requires no parameters. Returns an Array of Sticker objects."
       ],
@@ -3239,7 +3239,7 @@
     },
     "createForumTopic": {
       "name": "createForumTopic",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#createforumtopic",
+      "href": "https://core.telegram.org/bots/api#createforumtopic",
       "description": [
         "Use this method to create a topic in a forum supergroup chat. The bot must be an administrator in the chat for this to work and must have the can_manage_topics administrator rights. Returns information about the created topic as a ForumTopic object."
       ],
@@ -3284,7 +3284,7 @@
     },
     "editForumTopic": {
       "name": "editForumTopic",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#editforumtopic",
+      "href": "https://core.telegram.org/bots/api#editforumtopic",
       "description": [
         "Use this method to edit name and icon of a topic in a forum supergroup chat. The bot must be an administrator in the chat for this to work and must have can_manage_topics administrator rights, unless it is the creator of the topic. Returns True on success."
       ],
@@ -3329,7 +3329,7 @@
     },
     "closeForumTopic": {
       "name": "closeForumTopic",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#closeforumtopic",
+      "href": "https://core.telegram.org/bots/api#closeforumtopic",
       "description": [
         "Use this method to close an open topic in a forum supergroup chat. The bot must be an administrator in the chat for this to work and must have the can_manage_topics administrator rights, unless it is the creator of the topic. Returns True on success."
       ],
@@ -3358,7 +3358,7 @@
     },
     "reopenForumTopic": {
       "name": "reopenForumTopic",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#reopenforumtopic",
+      "href": "https://core.telegram.org/bots/api#reopenforumtopic",
       "description": [
         "Use this method to reopen a closed topic in a forum supergroup chat. The bot must be an administrator in the chat for this to work and must have the can_manage_topics administrator rights, unless it is the creator of the topic. Returns True on success."
       ],
@@ -3387,7 +3387,7 @@
     },
     "deleteForumTopic": {
       "name": "deleteForumTopic",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#deleteforumtopic",
+      "href": "https://core.telegram.org/bots/api#deleteforumtopic",
       "description": [
         "Use this method to delete a forum topic along with all its messages in a forum supergroup chat. The bot must be an administrator in the chat for this to work and must have the can_delete_messages administrator rights. Returns True on success."
       ],
@@ -3416,7 +3416,7 @@
     },
     "unpinAllForumTopicMessages": {
       "name": "unpinAllForumTopicMessages",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#unpinallforumtopicmessages",
+      "href": "https://core.telegram.org/bots/api#unpinallforumtopicmessages",
       "description": [
         "Use this method to clear the list of pinned messages in a forum topic. The bot must be an administrator in the chat for this to work and must have the can_pin_messages administrator right in the supergroup. Returns True on success."
       ],
@@ -3445,7 +3445,7 @@
     },
     "editGeneralForumTopic": {
       "name": "editGeneralForumTopic",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#editgeneralforumtopic",
+      "href": "https://core.telegram.org/bots/api#editgeneralforumtopic",
       "description": [
         "Use this method to edit the name of the 'General' topic in a forum supergroup chat. The bot must be an administrator in the chat for this to work and must have can_manage_topics administrator rights. Returns True on success."
       ],
@@ -3474,7 +3474,7 @@
     },
     "closeGeneralForumTopic": {
       "name": "closeGeneralForumTopic",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#closegeneralforumtopic",
+      "href": "https://core.telegram.org/bots/api#closegeneralforumtopic",
       "description": [
         "Use this method to close an open 'General' topic in a forum supergroup chat. The bot must be an administrator in the chat for this to work and must have the can_manage_topics administrator rights. Returns True on success."
       ],
@@ -3495,7 +3495,7 @@
     },
     "reopenGeneralForumTopic": {
       "name": "reopenGeneralForumTopic",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#reopengeneralforumtopic",
+      "href": "https://core.telegram.org/bots/api#reopengeneralforumtopic",
       "description": [
         "Use this method to reopen a closed 'General' topic in a forum supergroup chat. The bot must be an administrator in the chat for this to work and must have the can_manage_topics administrator rights. The topic will be automatically unhidden if it was hidden. Returns True on success."
       ],
@@ -3516,7 +3516,7 @@
     },
     "hideGeneralForumTopic": {
       "name": "hideGeneralForumTopic",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#hidegeneralforumtopic",
+      "href": "https://core.telegram.org/bots/api#hidegeneralforumtopic",
       "description": [
         "Use this method to hide the 'General' topic in a forum supergroup chat. The bot must be an administrator in the chat for this to work and must have the can_manage_topics administrator rights. The topic will be automatically closed if it was open. Returns True on success."
       ],
@@ -3537,7 +3537,7 @@
     },
     "unhideGeneralForumTopic": {
       "name": "unhideGeneralForumTopic",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#unhidegeneralforumtopic",
+      "href": "https://core.telegram.org/bots/api#unhidegeneralforumtopic",
       "description": [
         "Use this method to unhide the 'General' topic in a forum supergroup chat. The bot must be an administrator in the chat for this to work and must have the can_manage_topics administrator rights. Returns True on success."
       ],
@@ -3558,7 +3558,7 @@
     },
     "answerCallbackQuery": {
       "name": "answerCallbackQuery",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#answercallbackquery",
+      "href": "https://core.telegram.org/bots/api#answercallbackquery",
       "description": [
         "Use this method to send answers to callback queries sent from inline keyboards. The answer will be displayed to the user as a notification at the top of the chat screen or as an alert. On success, True is returned."
       ],
@@ -3610,7 +3610,7 @@
     },
     "setMyCommands": {
       "name": "setMyCommands",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#setmycommands",
+      "href": "https://core.telegram.org/bots/api#setmycommands",
       "description": [
         "Use this method to change the list of the bot's commands. See this manual for more details about bot commands. Returns True on success."
       ],
@@ -3646,7 +3646,7 @@
     },
     "deleteMyCommands": {
       "name": "deleteMyCommands",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#deletemycommands",
+      "href": "https://core.telegram.org/bots/api#deletemycommands",
       "description": [
         "Use this method to delete the list of the bot's commands for the given scope and user language. After deletion, higher level commands will be shown to affected users. Returns True on success."
       ],
@@ -3674,7 +3674,7 @@
     },
     "getMyCommands": {
       "name": "getMyCommands",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#getmycommands",
+      "href": "https://core.telegram.org/bots/api#getmycommands",
       "description": [
         "Use this method to get the current list of the bot's commands for the given scope and user language. Returns an Array of BotCommand objects. If commands aren't set, an empty list is returned."
       ],
@@ -3702,7 +3702,7 @@
     },
     "setChatMenuButton": {
       "name": "setChatMenuButton",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#setchatmenubutton",
+      "href": "https://core.telegram.org/bots/api#setchatmenubutton",
       "description": [
         "Use this method to change the bot's menu button in a private chat, or the default menu button. Returns True on success."
       ],
@@ -3730,7 +3730,7 @@
     },
     "getChatMenuButton": {
       "name": "getChatMenuButton",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#getchatmenubutton",
+      "href": "https://core.telegram.org/bots/api#getchatmenubutton",
       "description": [
         "Use this method to get the current value of the bot's menu button in a private chat, or the default menu button. Returns MenuButton on success."
       ],
@@ -3750,7 +3750,7 @@
     },
     "setMyDefaultAdministratorRights": {
       "name": "setMyDefaultAdministratorRights",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#setmydefaultadministratorrights",
+      "href": "https://core.telegram.org/bots/api#setmydefaultadministratorrights",
       "description": [
         "Use this method to change the default administrator rights requested by the bot when it's added as an administrator to groups or channels. These rights will be suggested to users, but they are free to modify the list before adding the bot. Returns True on success."
       ],
@@ -3778,7 +3778,7 @@
     },
     "getMyDefaultAdministratorRights": {
       "name": "getMyDefaultAdministratorRights",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#getmydefaultadministratorrights",
+      "href": "https://core.telegram.org/bots/api#getmydefaultadministratorrights",
       "description": [
         "Use this method to get the current default administrator rights of the bot. Returns ChatAdministratorRights on success."
       ],
@@ -3798,7 +3798,7 @@
     },
     "editMessageText": {
       "name": "editMessageText",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#editmessagetext",
+      "href": "https://core.telegram.org/bots/api#editmessagetext",
       "description": [
         "Use this method to edit text and game messages. On success, if the edited message is not an inline message, the edited Message is returned, otherwise True is returned."
       ],
@@ -3876,7 +3876,7 @@
     },
     "editMessageCaption": {
       "name": "editMessageCaption",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#editmessagecaption",
+      "href": "https://core.telegram.org/bots/api#editmessagecaption",
       "description": [
         "Use this method to edit captions of messages. On success, if the edited message is not an inline message, the edited Message is returned, otherwise True is returned."
       ],
@@ -3946,7 +3946,7 @@
     },
     "editMessageMedia": {
       "name": "editMessageMedia",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#editmessagemedia",
+      "href": "https://core.telegram.org/bots/api#editmessagemedia",
       "description": [
         "Use this method to edit animation, audio, document, photo, or video messages. If a message is part of a message album, then it can be edited only to an audio for audio albums, only to a document for document albums and to a photo or a video otherwise. When an inline message is edited, a new file can't be uploaded; use a previously uploaded file via its file_id or specify a URL. On success, if the edited message is not an inline message, the edited Message is returned, otherwise True is returned."
       ],
@@ -4000,7 +4000,7 @@
     },
     "editMessageReplyMarkup": {
       "name": "editMessageReplyMarkup",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#editmessagereplymarkup",
+      "href": "https://core.telegram.org/bots/api#editmessagereplymarkup",
       "description": [
         "Use this method to edit only the reply markup of messages. On success, if the edited message is not an inline message, the edited Message is returned, otherwise True is returned."
       ],
@@ -4046,7 +4046,7 @@
     },
     "stopPoll": {
       "name": "stopPoll",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#stoppoll",
+      "href": "https://core.telegram.org/bots/api#stoppoll",
       "description": [
         "Use this method to stop a poll which was sent by the bot. On success, the stopped Poll is returned."
       ],
@@ -4083,7 +4083,7 @@
     },
     "deleteMessage": {
       "name": "deleteMessage",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#deletemessage",
+      "href": "https://core.telegram.org/bots/api#deletemessage",
       "description": [
         "Use this method to delete a message, including service messages, with the following limitations:",
         "- A message can only be deleted if it was sent less than 48 hours ago.",
@@ -4121,7 +4121,7 @@
     },
     "sendSticker": {
       "name": "sendSticker",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sendsticker",
+      "href": "https://core.telegram.org/bots/api#sendsticker",
       "description": [
         "Use this method to send static .WEBP, animated .TGS, or video .WEBM stickers. On success, the sent Message is returned."
       ],
@@ -4153,7 +4153,7 @@
             "String"
           ],
           "required": true,
-          "description": "Sticker to send. Pass a file_id as String to send a file that exists on the Telegram servers (recommended), pass an HTTP URL as a String for Telegram to get a .WEBP file from the Internet, or upload a new one using multipart/form-data. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files"
+          "description": "Sticker to send. Pass a file_id as String to send a file that exists on the Telegram servers (recommended), pass an HTTP URL as a String for Telegram to get a .WEBP file from the Internet, or upload a new one using multipart/form-data. More information on Sending Files: https://core.telegram.org/bots/api#sending-files"
         },
         {
           "name": "disable_notification",
@@ -4202,7 +4202,7 @@
     },
     "getStickerSet": {
       "name": "getStickerSet",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#getstickerset",
+      "href": "https://core.telegram.org/bots/api#getstickerset",
       "description": [
         "Use this method to get a sticker set. On success, a StickerSet object is returned."
       ],
@@ -4222,7 +4222,7 @@
     },
     "getCustomEmojiStickers": {
       "name": "getCustomEmojiStickers",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#getcustomemojistickers",
+      "href": "https://core.telegram.org/bots/api#getcustomemojistickers",
       "description": [
         "Use this method to get information about custom emoji stickers by their identifiers. Returns an Array of Sticker objects."
       ],
@@ -4242,7 +4242,7 @@
     },
     "uploadStickerFile": {
       "name": "uploadStickerFile",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#uploadstickerfile",
+      "href": "https://core.telegram.org/bots/api#uploadstickerfile",
       "description": [
         "Use this method to upload a .PNG file with a sticker for later use in createNewStickerSet and addStickerToSet methods (can be used multiple times). Returns the uploaded File on success."
       ],
@@ -4264,13 +4264,13 @@
             "InputFile"
           ],
           "required": true,
-          "description": "PNG image with the sticker, must be up to 512 kilobytes in size, dimensions must not exceed 512px, and either width or height must be exactly 512px. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files"
+          "description": "PNG image with the sticker, must be up to 512 kilobytes in size, dimensions must not exceed 512px, and either width or height must be exactly 512px. More information on Sending Files: https://core.telegram.org/bots/api#sending-files"
         }
       ]
     },
     "createNewStickerSet": {
       "name": "createNewStickerSet",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#createnewstickerset",
+      "href": "https://core.telegram.org/bots/api#createnewstickerset",
       "description": [
         "Use this method to create a new sticker set owned by a user. The bot will be able to edit the sticker set thus created. You must use exactly one of the fields png_sticker, tgs_sticker, or webm_sticker. Returns True on success."
       ],
@@ -4309,7 +4309,7 @@
             "String"
           ],
           "required": false,
-          "description": "PNG image with the sticker, must be up to 512 kilobytes in size, dimensions must not exceed 512px, and either width or height must be exactly 512px. Pass a file_id as a String to send a file that already exists on the Telegram servers, pass an HTTP URL as a String for Telegram to get a file from the Internet, or upload a new one using multipart/form-data. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files"
+          "description": "PNG image with the sticker, must be up to 512 kilobytes in size, dimensions must not exceed 512px, and either width or height must be exactly 512px. Pass a file_id as a String to send a file that already exists on the Telegram servers, pass an HTTP URL as a String for Telegram to get a file from the Internet, or upload a new one using multipart/form-data. More information on Sending Files: https://core.telegram.org/bots/api#sending-files"
         },
         {
           "name": "tgs_sticker",
@@ -4355,7 +4355,7 @@
     },
     "addStickerToSet": {
       "name": "addStickerToSet",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#addstickertoset",
+      "href": "https://core.telegram.org/bots/api#addstickertoset",
       "description": [
         "Use this method to add a new sticker to a set created by the bot. You must use exactly one of the fields png_sticker, tgs_sticker, or webm_sticker. Animated stickers can be added to animated sticker sets and only to them. Animated sticker sets can have up to 50 stickers. Static sticker sets can have up to 120 stickers. Returns True on success."
       ],
@@ -4386,7 +4386,7 @@
             "String"
           ],
           "required": false,
-          "description": "PNG image with the sticker, must be up to 512 kilobytes in size, dimensions must not exceed 512px, and either width or height must be exactly 512px. Pass a file_id as a String to send a file that already exists on the Telegram servers, pass an HTTP URL as a String for Telegram to get a file from the Internet, or upload a new one using multipart/form-data. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files"
+          "description": "PNG image with the sticker, must be up to 512 kilobytes in size, dimensions must not exceed 512px, and either width or height must be exactly 512px. Pass a file_id as a String to send a file that already exists on the Telegram servers, pass an HTTP URL as a String for Telegram to get a file from the Internet, or upload a new one using multipart/form-data. More information on Sending Files: https://core.telegram.org/bots/api#sending-files"
         },
         {
           "name": "tgs_sticker",
@@ -4424,7 +4424,7 @@
     },
     "setStickerPositionInSet": {
       "name": "setStickerPositionInSet",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#setstickerpositioninset",
+      "href": "https://core.telegram.org/bots/api#setstickerpositioninset",
       "description": [
         "Use this method to move a sticker in a set created by the bot to a specific position. Returns True on success."
       ],
@@ -4452,7 +4452,7 @@
     },
     "deleteStickerFromSet": {
       "name": "deleteStickerFromSet",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#deletestickerfromset",
+      "href": "https://core.telegram.org/bots/api#deletestickerfromset",
       "description": [
         "Use this method to delete a sticker from a set created by the bot. Returns True on success."
       ],
@@ -4472,7 +4472,7 @@
     },
     "setStickerSetThumb": {
       "name": "setStickerSetThumb",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#setstickersetthumb",
+      "href": "https://core.telegram.org/bots/api#setstickersetthumb",
       "description": [
         "Use this method to set the thumbnail of a sticker set. Animated thumbnails can be set for animated sticker sets only. Video thumbnails can be set only for video sticker sets only. Returns True on success."
       ],
@@ -4503,13 +4503,13 @@
             "String"
           ],
           "required": false,
-          "description": "A PNG image with the thumbnail, must be up to 128 kilobytes in size and have width and height exactly 100px, or a TGS animation with the thumbnail up to 32 kilobytes in size; see https://core.telegram.org/stickers#animated-sticker-requirements for animated sticker technical requirements, or a WEBM video with the thumbnail up to 32 kilobytes in size; see https://core.telegram.org/stickers#video-sticker-requirements for video sticker technical requirements. Pass a file_id as a String to send a file that already exists on the Telegram servers, pass an HTTP URL as a String for Telegram to get a file from the Internet, or upload a new one using multipart/form-data. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files. Animated sticker set thumbnails can't be uploaded via HTTP URL."
+          "description": "A PNG image with the thumbnail, must be up to 128 kilobytes in size and have width and height exactly 100px, or a TGS animation with the thumbnail up to 32 kilobytes in size; see https://core.telegram.org/stickers#animated-sticker-requirements for animated sticker technical requirements, or a WEBM video with the thumbnail up to 32 kilobytes in size; see https://core.telegram.org/stickers#video-sticker-requirements for video sticker technical requirements. Pass a file_id as a String to send a file that already exists on the Telegram servers, pass an HTTP URL as a String for Telegram to get a file from the Internet, or upload a new one using multipart/form-data. More information on Sending Files: https://core.telegram.org/bots/api#sending-files. Animated sticker set thumbnails can't be uploaded via HTTP URL."
         }
       ]
     },
     "answerInlineQuery": {
       "name": "answerInlineQuery",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#answerinlinequery",
+      "href": "https://core.telegram.org/bots/api#answerinlinequery",
       "description": [
         "Use this method to send answers to an inline query. On success, True is returned.",
         "No more than 50 results per query are allowed."
@@ -4578,7 +4578,7 @@
     },
     "answerWebAppQuery": {
       "name": "answerWebAppQuery",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#answerwebappquery",
+      "href": "https://core.telegram.org/bots/api#answerwebappquery",
       "description": [
         "Use this method to set the result of an interaction with a Web App and send a corresponding message on behalf of the user to the chat from which the query originated. On success, a SentWebAppMessage object is returned."
       ],
@@ -4606,7 +4606,7 @@
     },
     "sendInvoice": {
       "name": "sendInvoice",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sendinvoice",
+      "href": "https://core.telegram.org/bots/api#sendinvoice",
       "description": [
         "Use this method to send invoices. On success, the sent Message is returned."
       ],
@@ -4843,7 +4843,7 @@
     },
     "createInvoiceLink": {
       "name": "createInvoiceLink",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#createinvoicelink",
+      "href": "https://core.telegram.org/bots/api#createinvoicelink",
       "description": [
         "Use this method to create a link for an invoice. Returns the created invoice link as String on success."
       ],
@@ -5015,7 +5015,7 @@
     },
     "answerShippingQuery": {
       "name": "answerShippingQuery",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#answershippingquery",
+      "href": "https://core.telegram.org/bots/api#answershippingquery",
       "description": [
         "If you sent an invoice requesting a shipping address and the parameter is_flexible was specified, the Bot API will send an Update with a shipping_query field to the bot. Use this method to reply to shipping queries. On success, True is returned."
       ],
@@ -5059,7 +5059,7 @@
     },
     "answerPreCheckoutQuery": {
       "name": "answerPreCheckoutQuery",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#answerprecheckoutquery",
+      "href": "https://core.telegram.org/bots/api#answerprecheckoutquery",
       "description": [
         "Once the user has confirmed their payment and shipping details, the Bot API sends the final confirmation in the form of an Update with the field pre_checkout_query. Use this method to respond to such pre-checkout queries. On success, True is returned. Note: The Bot API must receive an answer within 10 seconds after the pre-checkout query was sent."
       ],
@@ -5095,7 +5095,7 @@
     },
     "setPassportDataErrors": {
       "name": "setPassportDataErrors",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#setpassportdataerrors",
+      "href": "https://core.telegram.org/bots/api#setpassportdataerrors",
       "description": [
         "Informs a user that some of the Telegram Passport elements they provided contains errors. The user will not be able to re-submit their Passport to you until the errors are fixed (the contents of the field for which you returned the error must change). Returns True on success.",
         "Use this if the data submitted by the user doesn't satisfy the standards your service requires for any reason. For example, if a birthday date seems invalid, a submitted document is blurry, a scan shows evidence of tampering, etc. Supply some details in the error message to make sure the user knows how to correct the issues."
@@ -5124,7 +5124,7 @@
     },
     "sendGame": {
       "name": "sendGame",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sendgame",
+      "href": "https://core.telegram.org/bots/api#sendgame",
       "description": [
         "Use this method to send a game. On success, the sent Message is returned."
       ],
@@ -5200,7 +5200,7 @@
     },
     "setGameScore": {
       "name": "setGameScore",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#setgamescore",
+      "href": "https://core.telegram.org/bots/api#setgamescore",
       "description": [
         "Use this method to set the score of the specified user in a game message. On success, if the message is not an inline message, the Message is returned, otherwise True is returned. Returns an error, if the new score is not greater than the user's current score in the chat and force is False."
       ],
@@ -5269,7 +5269,7 @@
     },
     "getGameHighScores": {
       "name": "getGameHighScores",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#getgamehighscores",
+      "href": "https://core.telegram.org/bots/api#getgamehighscores",
       "description": [
         "Use this method to get data for high score tables. Will return the score of the specified user and several of their neighbors in a game. Returns an Array of GameHighScore objects."
       ],
@@ -5315,7 +5315,7 @@
   "types": {
     "Update": {
       "name": "Update",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#update",
+      "href": "https://core.telegram.org/bots/api#update",
       "description": [
         "This object represents an incoming update.",
         "At most one of the optional parameters can be present in any given update."
@@ -5445,7 +5445,7 @@
     },
     "WebhookInfo": {
       "name": "WebhookInfo",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#webhookinfo",
+      "href": "https://core.telegram.org/bots/api#webhookinfo",
       "description": [
         "Describes the current status of a webhook."
       ],
@@ -5526,7 +5526,7 @@
     },
     "User": {
       "name": "User",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#user",
+      "href": "https://core.telegram.org/bots/api#user",
       "description": [
         "This object represents a Telegram user or bot."
       ],
@@ -5623,7 +5623,7 @@
     },
     "Chat": {
       "name": "Chat",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#chat",
+      "href": "https://core.telegram.org/bots/api#chat",
       "description": [
         "This object represents a chat."
       ],
@@ -5856,7 +5856,7 @@
     },
     "Message": {
       "name": "Message",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#message",
+      "href": "https://core.telegram.org/bots/api#message",
       "description": [
         "This object represents a message."
       ],
@@ -6147,7 +6147,7 @@
             "Game"
           ],
           "required": false,
-          "description": "Optional. Message is a game, information about the game. More about games: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#games"
+          "description": "Optional. Message is a game, information about the game. More about games: https://core.telegram.org/bots/api#games"
         },
         {
           "name": "poll",
@@ -6275,7 +6275,7 @@
             "Invoice"
           ],
           "required": false,
-          "description": "Optional. Message is an invoice for a payment, information about the invoice. More about payments: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#payments"
+          "description": "Optional. Message is an invoice for a payment, information about the invoice. More about payments: https://core.telegram.org/bots/api#payments"
         },
         {
           "name": "successful_payment",
@@ -6283,7 +6283,7 @@
             "SuccessfulPayment"
           ],
           "required": false,
-          "description": "Optional. Message is a service message about a successful payment, information about the payment. More about payments: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#payments"
+          "description": "Optional. Message is a service message about a successful payment, information about the payment. More about payments: https://core.telegram.org/bots/api#payments"
         },
         {
           "name": "user_shared",
@@ -6433,7 +6433,7 @@
     },
     "MessageId": {
       "name": "MessageId",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#messageid",
+      "href": "https://core.telegram.org/bots/api#messageid",
       "description": [
         "This object represents a unique message identifier."
       ],
@@ -6450,7 +6450,7 @@
     },
     "MessageEntity": {
       "name": "MessageEntity",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#messageentity",
+      "href": "https://core.telegram.org/bots/api#messageentity",
       "description": [
         "This object represents one special entity in a text message. For example, hashtags, usernames, URLs, etc."
       ],
@@ -6515,7 +6515,7 @@
     },
     "PhotoSize": {
       "name": "PhotoSize",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#photosize",
+      "href": "https://core.telegram.org/bots/api#photosize",
       "description": [
         "This object represents one size of a photo or a file / sticker thumbnail."
       ],
@@ -6564,7 +6564,7 @@
     },
     "Animation": {
       "name": "Animation",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#animation",
+      "href": "https://core.telegram.org/bots/api#animation",
       "description": [
         "This object represents an animation file (GIF or H.264/MPEG-4 AVC video without sound)."
       ],
@@ -6645,7 +6645,7 @@
     },
     "Audio": {
       "name": "Audio",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#audio",
+      "href": "https://core.telegram.org/bots/api#audio",
       "description": [
         "This object represents an audio file to be treated as music by the Telegram clients."
       ],
@@ -6726,7 +6726,7 @@
     },
     "Document": {
       "name": "Document",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#document",
+      "href": "https://core.telegram.org/bots/api#document",
       "description": [
         "This object represents a general file (as opposed to photos, voice messages and audio files)."
       ],
@@ -6783,7 +6783,7 @@
     },
     "Video": {
       "name": "Video",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#video",
+      "href": "https://core.telegram.org/bots/api#video",
       "description": [
         "This object represents a video file."
       ],
@@ -6864,7 +6864,7 @@
     },
     "VideoNote": {
       "name": "VideoNote",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#videonote",
+      "href": "https://core.telegram.org/bots/api#videonote",
       "description": [
         "This object represents a video message (available in Telegram apps as of v.4.0)."
       ],
@@ -6921,7 +6921,7 @@
     },
     "Voice": {
       "name": "Voice",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#voice",
+      "href": "https://core.telegram.org/bots/api#voice",
       "description": [
         "This object represents a voice note."
       ],
@@ -6970,7 +6970,7 @@
     },
     "Contact": {
       "name": "Contact",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#contact",
+      "href": "https://core.telegram.org/bots/api#contact",
       "description": [
         "This object represents a phone contact."
       ],
@@ -7019,7 +7019,7 @@
     },
     "Dice": {
       "name": "Dice",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#dice",
+      "href": "https://core.telegram.org/bots/api#dice",
       "description": [
         "This object represents an animated emoji that displays a random value."
       ],
@@ -7044,7 +7044,7 @@
     },
     "PollOption": {
       "name": "PollOption",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#polloption",
+      "href": "https://core.telegram.org/bots/api#polloption",
       "description": [
         "This object contains information about one answer option in a poll."
       ],
@@ -7069,7 +7069,7 @@
     },
     "PollAnswer": {
       "name": "PollAnswer",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#pollanswer",
+      "href": "https://core.telegram.org/bots/api#pollanswer",
       "description": [
         "This object represents an answer of a user in a non-anonymous poll."
       ],
@@ -7102,7 +7102,7 @@
     },
     "Poll": {
       "name": "Poll",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#poll",
+      "href": "https://core.telegram.org/bots/api#poll",
       "description": [
         "This object contains information about a poll."
       ],
@@ -7215,7 +7215,7 @@
     },
     "Location": {
       "name": "Location",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#location",
+      "href": "https://core.telegram.org/bots/api#location",
       "description": [
         "This object represents a point on the map."
       ],
@@ -7272,7 +7272,7 @@
     },
     "Venue": {
       "name": "Venue",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#venue",
+      "href": "https://core.telegram.org/bots/api#venue",
       "description": [
         "This object represents a venue."
       ],
@@ -7337,7 +7337,7 @@
     },
     "WebAppData": {
       "name": "WebAppData",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#webappdata",
+      "href": "https://core.telegram.org/bots/api#webappdata",
       "description": [
         "Describes data sent from a Web App to the bot."
       ],
@@ -7362,7 +7362,7 @@
     },
     "ProximityAlertTriggered": {
       "name": "ProximityAlertTriggered",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#proximityalerttriggered",
+      "href": "https://core.telegram.org/bots/api#proximityalerttriggered",
       "description": [
         "This object represents the content of a service message, sent whenever a user in the chat triggers a proximity alert set by another user."
       ],
@@ -7395,7 +7395,7 @@
     },
     "MessageAutoDeleteTimerChanged": {
       "name": "MessageAutoDeleteTimerChanged",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#messageautodeletetimerchanged",
+      "href": "https://core.telegram.org/bots/api#messageautodeletetimerchanged",
       "description": [
         "This object represents a service message about a change in auto-delete timer settings."
       ],
@@ -7412,7 +7412,7 @@
     },
     "ForumTopicCreated": {
       "name": "ForumTopicCreated",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#forumtopiccreated",
+      "href": "https://core.telegram.org/bots/api#forumtopiccreated",
       "description": [
         "This object represents a service message about a new forum topic created in the chat."
       ],
@@ -7445,14 +7445,14 @@
     },
     "ForumTopicClosed": {
       "name": "ForumTopicClosed",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#forumtopicclosed",
+      "href": "https://core.telegram.org/bots/api#forumtopicclosed",
       "description": [
         "This object represents a service message about a forum topic closed in the chat. Currently holds no information."
       ]
     },
     "ForumTopicEdited": {
       "name": "ForumTopicEdited",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#forumtopicedited",
+      "href": "https://core.telegram.org/bots/api#forumtopicedited",
       "description": [
         "This object represents a service message about an edited forum topic."
       ],
@@ -7477,28 +7477,28 @@
     },
     "ForumTopicReopened": {
       "name": "ForumTopicReopened",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#forumtopicreopened",
+      "href": "https://core.telegram.org/bots/api#forumtopicreopened",
       "description": [
         "This object represents a service message about a forum topic reopened in the chat. Currently holds no information."
       ]
     },
     "GeneralForumTopicHidden": {
       "name": "GeneralForumTopicHidden",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#generalforumtopichidden",
+      "href": "https://core.telegram.org/bots/api#generalforumtopichidden",
       "description": [
         "This object represents a service message about General forum topic hidden in the chat. Currently holds no information."
       ]
     },
     "GeneralForumTopicUnhidden": {
       "name": "GeneralForumTopicUnhidden",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#generalforumtopicunhidden",
+      "href": "https://core.telegram.org/bots/api#generalforumtopicunhidden",
       "description": [
         "This object represents a service message about General forum topic unhidden in the chat. Currently holds no information."
       ]
     },
     "UserShared": {
       "name": "UserShared",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#usershared",
+      "href": "https://core.telegram.org/bots/api#usershared",
       "description": [
         "This object contains information about the user whose identifier was shared with the bot using a KeyboardButtonRequestUser button."
       ],
@@ -7523,7 +7523,7 @@
     },
     "ChatShared": {
       "name": "ChatShared",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#chatshared",
+      "href": "https://core.telegram.org/bots/api#chatshared",
       "description": [
         "This object contains information about the chat whose identifier was shared with the bot using a KeyboardButtonRequestChat button."
       ],
@@ -7548,14 +7548,14 @@
     },
     "WriteAccessAllowed": {
       "name": "WriteAccessAllowed",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#writeaccessallowed",
+      "href": "https://core.telegram.org/bots/api#writeaccessallowed",
       "description": [
         "This object represents a service message about a user allowing a bot added to the attachment menu to write messages. Currently holds no information."
       ]
     },
     "VideoChatScheduled": {
       "name": "VideoChatScheduled",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#videochatscheduled",
+      "href": "https://core.telegram.org/bots/api#videochatscheduled",
       "description": [
         "This object represents a service message about a video chat scheduled in the chat."
       ],
@@ -7572,14 +7572,14 @@
     },
     "VideoChatStarted": {
       "name": "VideoChatStarted",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#videochatstarted",
+      "href": "https://core.telegram.org/bots/api#videochatstarted",
       "description": [
         "This object represents a service message about a video chat started in the chat. Currently holds no information."
       ]
     },
     "VideoChatEnded": {
       "name": "VideoChatEnded",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#videochatended",
+      "href": "https://core.telegram.org/bots/api#videochatended",
       "description": [
         "This object represents a service message about a video chat ended in the chat."
       ],
@@ -7596,7 +7596,7 @@
     },
     "VideoChatParticipantsInvited": {
       "name": "VideoChatParticipantsInvited",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#videochatparticipantsinvited",
+      "href": "https://core.telegram.org/bots/api#videochatparticipantsinvited",
       "description": [
         "This object represents a service message about new members invited to a video chat."
       ],
@@ -7613,7 +7613,7 @@
     },
     "UserProfilePhotos": {
       "name": "UserProfilePhotos",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#userprofilephotos",
+      "href": "https://core.telegram.org/bots/api#userprofilephotos",
       "description": [
         "This object represent a user's profile pictures."
       ],
@@ -7638,7 +7638,7 @@
     },
     "File": {
       "name": "File",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#file",
+      "href": "https://core.telegram.org/bots/api#file",
       "description": [
         "This object represents a file ready to be downloaded. The file can be downloaded via the link https://api.telegram.org/file/bot<token>/<file_path>. It is guaranteed that the link will be valid for at least 1 hour. When the link expires, a new one can be requested by calling getFile."
       ],
@@ -7679,7 +7679,7 @@
     },
     "WebAppInfo": {
       "name": "WebAppInfo",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#webappinfo",
+      "href": "https://core.telegram.org/bots/api#webappinfo",
       "description": [
         "Describes a Web App."
       ],
@@ -7696,7 +7696,7 @@
     },
     "ReplyKeyboardMarkup": {
       "name": "ReplyKeyboardMarkup",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#replykeyboardmarkup",
+      "href": "https://core.telegram.org/bots/api#replykeyboardmarkup",
       "description": [
         "This object represents a custom keyboard with reply options (see Introduction to bots for details and examples)."
       ],
@@ -7753,7 +7753,7 @@
     },
     "KeyboardButton": {
       "name": "KeyboardButton",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#keyboardbutton",
+      "href": "https://core.telegram.org/bots/api#keyboardbutton",
       "description": [
         "This object represents one button of the reply keyboard. For simple text buttons, String can be used instead of this object to specify the button text. The optional fields web_app, request_user, request_chat, request_contact, request_location, and request_poll are mutually exclusive.",
         "Note: request_contact and request_location options will only work in Telegram versions released after 9 April, 2016. Older clients will display unsupported message.",
@@ -7822,7 +7822,7 @@
     },
     "KeyboardButtonRequestUser": {
       "name": "KeyboardButtonRequestUser",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#keyboardbuttonrequestuser",
+      "href": "https://core.telegram.org/bots/api#keyboardbuttonrequestuser",
       "description": [
         "This object defines the criteria used to request a suitable user. The identifier of the selected user will be shared with the bot when the corresponding button is pressed."
       ],
@@ -7855,7 +7855,7 @@
     },
     "KeyboardButtonRequestChat": {
       "name": "KeyboardButtonRequestChat",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#keyboardbuttonrequestchat",
+      "href": "https://core.telegram.org/bots/api#keyboardbuttonrequestchat",
       "description": [
         "This object defines the criteria used to request a suitable chat. The identifier of the selected chat will be shared with the bot when the corresponding button is pressed."
       ],
@@ -7928,7 +7928,7 @@
     },
     "KeyboardButtonPollType": {
       "name": "KeyboardButtonPollType",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#keyboardbuttonpolltype",
+      "href": "https://core.telegram.org/bots/api#keyboardbuttonpolltype",
       "description": [
         "This object represents type of a poll, which is allowed to be created and sent when the corresponding button is pressed."
       ],
@@ -7945,7 +7945,7 @@
     },
     "ReplyKeyboardRemove": {
       "name": "ReplyKeyboardRemove",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#replykeyboardremove",
+      "href": "https://core.telegram.org/bots/api#replykeyboardremove",
       "description": [
         "Upon receiving a message with this object, Telegram clients will remove the current custom keyboard and display the default letter-keyboard. By default, custom keyboards are displayed until a new keyboard is sent by a bot. An exception is made for one-time keyboards that are hidden immediately after the user presses a button (see ReplyKeyboardMarkup)."
       ],
@@ -7970,7 +7970,7 @@
     },
     "InlineKeyboardMarkup": {
       "name": "InlineKeyboardMarkup",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inlinekeyboardmarkup",
+      "href": "https://core.telegram.org/bots/api#inlinekeyboardmarkup",
       "description": [
         "This object represents an inline keyboard that appears right next to the message it belongs to.",
         "Note: This will only work in Telegram versions released after 9 April, 2016. Older clients will display unsupported message."
@@ -7988,7 +7988,7 @@
     },
     "InlineKeyboardButton": {
       "name": "InlineKeyboardButton",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inlinekeyboardbutton",
+      "href": "https://core.telegram.org/bots/api#inlinekeyboardbutton",
       "description": [
         "This object represents one button of an inline keyboard. You must use exactly one of the optional fields."
       ],
@@ -8069,7 +8069,7 @@
     },
     "LoginUrl": {
       "name": "LoginUrl",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#loginurl",
+      "href": "https://core.telegram.org/bots/api#loginurl",
       "description": [
         "This object represents a parameter of the inline keyboard button used to automatically authorize a user. Serves as a great replacement for the Telegram Login Widget when the user is coming from Telegram. All the user needs to do is tap/click a button and confirm that they want to log in:",
         "Telegram apps support these buttons as of version 5.7."
@@ -8111,7 +8111,7 @@
     },
     "CallbackQuery": {
       "name": "CallbackQuery",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#callbackquery",
+      "href": "https://core.telegram.org/bots/api#callbackquery",
       "description": [
         "This object represents an incoming callback query from a callback button in an inline keyboard. If the button that originated the query was attached to a message sent by the bot, the field message will be present. If the button was attached to a message sent via the bot (in inline mode), the field inline_message_id will be present. Exactly one of the fields data or game_short_name will be present."
       ],
@@ -8176,7 +8176,7 @@
     },
     "ForceReply": {
       "name": "ForceReply",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#forcereply",
+      "href": "https://core.telegram.org/bots/api#forcereply",
       "description": [
         "Upon receiving a message with this object, Telegram clients will display a reply interface to the user (act as if the user has selected the bot's message and tapped 'Reply'). This can be extremely useful if you want to create user-friendly step-by-step interfaces without having to sacrifice privacy mode."
       ],
@@ -8209,7 +8209,7 @@
     },
     "ChatPhoto": {
       "name": "ChatPhoto",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#chatphoto",
+      "href": "https://core.telegram.org/bots/api#chatphoto",
       "description": [
         "This object represents a chat photo."
       ],
@@ -8250,7 +8250,7 @@
     },
     "ChatInviteLink": {
       "name": "ChatInviteLink",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#chatinvitelink",
+      "href": "https://core.telegram.org/bots/api#chatinvitelink",
       "description": [
         "Represents an invite link for a chat."
       ],
@@ -8331,7 +8331,7 @@
     },
     "ChatAdministratorRights": {
       "name": "ChatAdministratorRights",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#chatadministratorrights",
+      "href": "https://core.telegram.org/bots/api#chatadministratorrights",
       "description": [
         "Represents the rights of an administrator in a chat."
       ],
@@ -8436,7 +8436,7 @@
     },
     "ChatMember": {
       "name": "ChatMember",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#chatmember",
+      "href": "https://core.telegram.org/bots/api#chatmember",
       "description": [
         "This object contains information about one member of a chat. Currently, the following 6 types of chat members are supported:",
         "- ChatMemberOwner",
@@ -8457,7 +8457,7 @@
     },
     "ChatMemberOwner": {
       "name": "ChatMemberOwner",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#chatmemberowner",
+      "href": "https://core.telegram.org/bots/api#chatmemberowner",
       "description": [
         "Represents a chat member that owns the chat and has all administrator privileges."
       ],
@@ -8501,7 +8501,7 @@
     },
     "ChatMemberAdministrator": {
       "name": "ChatMemberAdministrator",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#chatmemberadministrator",
+      "href": "https://core.telegram.org/bots/api#chatmemberadministrator",
       "description": [
         "Represents a chat member that has some additional privileges."
       ],
@@ -8641,7 +8641,7 @@
     },
     "ChatMemberMember": {
       "name": "ChatMemberMember",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#chatmembermember",
+      "href": "https://core.telegram.org/bots/api#chatmembermember",
       "description": [
         "Represents a chat member that has no additional privileges or restrictions."
       ],
@@ -8669,7 +8669,7 @@
     },
     "ChatMemberRestricted": {
       "name": "ChatMemberRestricted",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#chatmemberrestricted",
+      "href": "https://core.telegram.org/bots/api#chatmemberrestricted",
       "description": [
         "Represents a chat member that is under certain restrictions in the chat. Supergroups only."
       ],
@@ -8825,7 +8825,7 @@
     },
     "ChatMemberLeft": {
       "name": "ChatMemberLeft",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#chatmemberleft",
+      "href": "https://core.telegram.org/bots/api#chatmemberleft",
       "description": [
         "Represents a chat member that isn't currently a member of the chat, but may join it themselves."
       ],
@@ -8853,7 +8853,7 @@
     },
     "ChatMemberBanned": {
       "name": "ChatMemberBanned",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#chatmemberbanned",
+      "href": "https://core.telegram.org/bots/api#chatmemberbanned",
       "description": [
         "Represents a chat member that was banned in the chat and can't return to the chat or view chat messages."
       ],
@@ -8889,7 +8889,7 @@
     },
     "ChatMemberUpdated": {
       "name": "ChatMemberUpdated",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#chatmemberupdated",
+      "href": "https://core.telegram.org/bots/api#chatmemberupdated",
       "description": [
         "This object represents changes in the status of a chat member."
       ],
@@ -8946,7 +8946,7 @@
     },
     "ChatJoinRequest": {
       "name": "ChatJoinRequest",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#chatjoinrequest",
+      "href": "https://core.telegram.org/bots/api#chatjoinrequest",
       "description": [
         "Represents a join request sent to a chat."
       ],
@@ -9003,7 +9003,7 @@
     },
     "ChatPermissions": {
       "name": "ChatPermissions",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#chatpermissions",
+      "href": "https://core.telegram.org/bots/api#chatpermissions",
       "description": [
         "Describes actions that a non-administrator user is allowed to take in a chat."
       ],
@@ -9124,7 +9124,7 @@
     },
     "ChatLocation": {
       "name": "ChatLocation",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#chatlocation",
+      "href": "https://core.telegram.org/bots/api#chatlocation",
       "description": [
         "Represents a location to which a chat is connected."
       ],
@@ -9149,7 +9149,7 @@
     },
     "ForumTopic": {
       "name": "ForumTopic",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#forumtopic",
+      "href": "https://core.telegram.org/bots/api#forumtopic",
       "description": [
         "This object represents a forum topic."
       ],
@@ -9190,7 +9190,7 @@
     },
     "BotCommand": {
       "name": "BotCommand",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#botcommand",
+      "href": "https://core.telegram.org/bots/api#botcommand",
       "description": [
         "This object represents a bot command."
       ],
@@ -9215,7 +9215,7 @@
     },
     "BotCommandScope": {
       "name": "BotCommandScope",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#botcommandscope",
+      "href": "https://core.telegram.org/bots/api#botcommandscope",
       "description": [
         "This object represents the scope to which bot commands are applied. Currently, the following 7 scopes are supported:",
         "- BotCommandScopeDefault",
@@ -9238,7 +9238,7 @@
     },
     "BotCommandScopeDefault": {
       "name": "BotCommandScopeDefault",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#botcommandscopedefault",
+      "href": "https://core.telegram.org/bots/api#botcommandscopedefault",
       "description": [
         "Represents the default scope of bot commands. Default commands are used if no commands with a narrower scope are specified for the user."
       ],
@@ -9258,7 +9258,7 @@
     },
     "BotCommandScopeAllPrivateChats": {
       "name": "BotCommandScopeAllPrivateChats",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#botcommandscopeallprivatechats",
+      "href": "https://core.telegram.org/bots/api#botcommandscopeallprivatechats",
       "description": [
         "Represents the scope of bot commands, covering all private chats."
       ],
@@ -9278,7 +9278,7 @@
     },
     "BotCommandScopeAllGroupChats": {
       "name": "BotCommandScopeAllGroupChats",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#botcommandscopeallgroupchats",
+      "href": "https://core.telegram.org/bots/api#botcommandscopeallgroupchats",
       "description": [
         "Represents the scope of bot commands, covering all group and supergroup chats."
       ],
@@ -9298,7 +9298,7 @@
     },
     "BotCommandScopeAllChatAdministrators": {
       "name": "BotCommandScopeAllChatAdministrators",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#botcommandscopeallchatadministrators",
+      "href": "https://core.telegram.org/bots/api#botcommandscopeallchatadministrators",
       "description": [
         "Represents the scope of bot commands, covering all group and supergroup chat administrators."
       ],
@@ -9318,7 +9318,7 @@
     },
     "BotCommandScopeChat": {
       "name": "BotCommandScopeChat",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#botcommandscopechat",
+      "href": "https://core.telegram.org/bots/api#botcommandscopechat",
       "description": [
         "Represents the scope of bot commands, covering a specific chat."
       ],
@@ -9347,7 +9347,7 @@
     },
     "BotCommandScopeChatAdministrators": {
       "name": "BotCommandScopeChatAdministrators",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#botcommandscopechatadministrators",
+      "href": "https://core.telegram.org/bots/api#botcommandscopechatadministrators",
       "description": [
         "Represents the scope of bot commands, covering all administrators of a specific group or supergroup chat."
       ],
@@ -9376,7 +9376,7 @@
     },
     "BotCommandScopeChatMember": {
       "name": "BotCommandScopeChatMember",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#botcommandscopechatmember",
+      "href": "https://core.telegram.org/bots/api#botcommandscopechatmember",
       "description": [
         "Represents the scope of bot commands, covering a specific member of a group or supergroup chat."
       ],
@@ -9413,7 +9413,7 @@
     },
     "MenuButton": {
       "name": "MenuButton",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#menubutton",
+      "href": "https://core.telegram.org/bots/api#menubutton",
       "description": [
         "This object describes the bot's menu button in a private chat. It should be one of",
         "- MenuButtonCommands",
@@ -9429,7 +9429,7 @@
     },
     "MenuButtonCommands": {
       "name": "MenuButtonCommands",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#menubuttoncommands",
+      "href": "https://core.telegram.org/bots/api#menubuttoncommands",
       "description": [
         "Represents a menu button, which opens the bot's list of commands."
       ],
@@ -9449,7 +9449,7 @@
     },
     "MenuButtonWebApp": {
       "name": "MenuButtonWebApp",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#menubuttonwebapp",
+      "href": "https://core.telegram.org/bots/api#menubuttonwebapp",
       "description": [
         "Represents a menu button, which launches a Web App."
       ],
@@ -9485,7 +9485,7 @@
     },
     "MenuButtonDefault": {
       "name": "MenuButtonDefault",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#menubuttondefault",
+      "href": "https://core.telegram.org/bots/api#menubuttondefault",
       "description": [
         "Describes that no specific value for the menu button was set."
       ],
@@ -9505,7 +9505,7 @@
     },
     "ResponseParameters": {
       "name": "ResponseParameters",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#responseparameters",
+      "href": "https://core.telegram.org/bots/api#responseparameters",
       "description": [
         "Describes why a request was unsuccessful."
       ],
@@ -9530,7 +9530,7 @@
     },
     "InputMedia": {
       "name": "InputMedia",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inputmedia",
+      "href": "https://core.telegram.org/bots/api#inputmedia",
       "description": [
         "This object represents the content of a media message to be sent. It should be one of",
         "- InputMediaAnimation",
@@ -9549,7 +9549,7 @@
     },
     "InputMediaPhoto": {
       "name": "InputMediaPhoto",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inputmediaphoto",
+      "href": "https://core.telegram.org/bots/api#inputmediaphoto",
       "description": [
         "Represents a photo to be sent."
       ],
@@ -9568,7 +9568,7 @@
             "String"
           ],
           "required": true,
-          "description": "File to send. Pass a file_id to send a file that exists on the Telegram servers (recommended), pass an HTTP URL for Telegram to get a file from the Internet, or pass \"attach://<file_attach_name>\" to upload a new one using multipart/form-data under <file_attach_name> name. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files"
+          "description": "File to send. Pass a file_id to send a file that exists on the Telegram servers (recommended), pass an HTTP URL for Telegram to get a file from the Internet, or pass \"attach://<file_attach_name>\" to upload a new one using multipart/form-data under <file_attach_name> name. More information on Sending Files: https://core.telegram.org/bots/api#sending-files"
         },
         {
           "name": "caption",
@@ -9609,7 +9609,7 @@
     },
     "InputMediaVideo": {
       "name": "InputMediaVideo",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inputmediavideo",
+      "href": "https://core.telegram.org/bots/api#inputmediavideo",
       "description": [
         "Represents a video to be sent."
       ],
@@ -9628,7 +9628,7 @@
             "String"
           ],
           "required": true,
-          "description": "File to send. Pass a file_id to send a file that exists on the Telegram servers (recommended), pass an HTTP URL for Telegram to get a file from the Internet, or pass \"attach://<file_attach_name>\" to upload a new one using multipart/form-data under <file_attach_name> name. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files"
+          "description": "File to send. Pass a file_id to send a file that exists on the Telegram servers (recommended), pass an HTTP URL for Telegram to get a file from the Internet, or pass \"attach://<file_attach_name>\" to upload a new one using multipart/form-data under <file_attach_name> name. More information on Sending Files: https://core.telegram.org/bots/api#sending-files"
         },
         {
           "name": "thumb",
@@ -9637,7 +9637,7 @@
             "String"
           ],
           "required": false,
-          "description": "Optional. Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass \"attach://<file_attach_name>\" if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files"
+          "description": "Optional. Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass \"attach://<file_attach_name>\" if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More information on Sending Files: https://core.telegram.org/bots/api#sending-files"
         },
         {
           "name": "caption",
@@ -9710,7 +9710,7 @@
     },
     "InputMediaAnimation": {
       "name": "InputMediaAnimation",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inputmediaanimation",
+      "href": "https://core.telegram.org/bots/api#inputmediaanimation",
       "description": [
         "Represents an animation file (GIF or H.264/MPEG-4 AVC video without sound) to be sent."
       ],
@@ -9729,7 +9729,7 @@
             "String"
           ],
           "required": true,
-          "description": "File to send. Pass a file_id to send a file that exists on the Telegram servers (recommended), pass an HTTP URL for Telegram to get a file from the Internet, or pass \"attach://<file_attach_name>\" to upload a new one using multipart/form-data under <file_attach_name> name. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files"
+          "description": "File to send. Pass a file_id to send a file that exists on the Telegram servers (recommended), pass an HTTP URL for Telegram to get a file from the Internet, or pass \"attach://<file_attach_name>\" to upload a new one using multipart/form-data under <file_attach_name> name. More information on Sending Files: https://core.telegram.org/bots/api#sending-files"
         },
         {
           "name": "thumb",
@@ -9738,7 +9738,7 @@
             "String"
           ],
           "required": false,
-          "description": "Optional. Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass \"attach://<file_attach_name>\" if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files"
+          "description": "Optional. Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass \"attach://<file_attach_name>\" if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More information on Sending Files: https://core.telegram.org/bots/api#sending-files"
         },
         {
           "name": "caption",
@@ -9803,7 +9803,7 @@
     },
     "InputMediaAudio": {
       "name": "InputMediaAudio",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inputmediaaudio",
+      "href": "https://core.telegram.org/bots/api#inputmediaaudio",
       "description": [
         "Represents an audio file to be treated as music to be sent."
       ],
@@ -9822,7 +9822,7 @@
             "String"
           ],
           "required": true,
-          "description": "File to send. Pass a file_id to send a file that exists on the Telegram servers (recommended), pass an HTTP URL for Telegram to get a file from the Internet, or pass \"attach://<file_attach_name>\" to upload a new one using multipart/form-data under <file_attach_name> name. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files"
+          "description": "File to send. Pass a file_id to send a file that exists on the Telegram servers (recommended), pass an HTTP URL for Telegram to get a file from the Internet, or pass \"attach://<file_attach_name>\" to upload a new one using multipart/form-data under <file_attach_name> name. More information on Sending Files: https://core.telegram.org/bots/api#sending-files"
         },
         {
           "name": "thumb",
@@ -9831,7 +9831,7 @@
             "String"
           ],
           "required": false,
-          "description": "Optional. Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass \"attach://<file_attach_name>\" if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files"
+          "description": "Optional. Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass \"attach://<file_attach_name>\" if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More information on Sending Files: https://core.telegram.org/bots/api#sending-files"
         },
         {
           "name": "caption",
@@ -9888,7 +9888,7 @@
     },
     "InputMediaDocument": {
       "name": "InputMediaDocument",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inputmediadocument",
+      "href": "https://core.telegram.org/bots/api#inputmediadocument",
       "description": [
         "Represents a general file to be sent."
       ],
@@ -9907,7 +9907,7 @@
             "String"
           ],
           "required": true,
-          "description": "File to send. Pass a file_id to send a file that exists on the Telegram servers (recommended), pass an HTTP URL for Telegram to get a file from the Internet, or pass \"attach://<file_attach_name>\" to upload a new one using multipart/form-data under <file_attach_name> name. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files"
+          "description": "File to send. Pass a file_id to send a file that exists on the Telegram servers (recommended), pass an HTTP URL for Telegram to get a file from the Internet, or pass \"attach://<file_attach_name>\" to upload a new one using multipart/form-data under <file_attach_name> name. More information on Sending Files: https://core.telegram.org/bots/api#sending-files"
         },
         {
           "name": "thumb",
@@ -9916,7 +9916,7 @@
             "String"
           ],
           "required": false,
-          "description": "Optional. Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass \"attach://<file_attach_name>\" if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More information on Sending Files: https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sending-files"
+          "description": "Optional. Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass \"attach://<file_attach_name>\" if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More information on Sending Files: https://core.telegram.org/bots/api#sending-files"
         },
         {
           "name": "caption",
@@ -9957,14 +9957,14 @@
     },
     "InputFile": {
       "name": "InputFile",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inputfile",
+      "href": "https://core.telegram.org/bots/api#inputfile",
       "description": [
         "This object represents the contents of a file to be uploaded. Must be posted using multipart/form-data in the usual way that files are uploaded via the browser."
       ]
     },
     "Sticker": {
       "name": "Sticker",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sticker",
+      "href": "https://core.telegram.org/bots/api#sticker",
       "description": [
         "This object represents a sticker."
       ],
@@ -10085,7 +10085,7 @@
     },
     "StickerSet": {
       "name": "StickerSet",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#stickerset",
+      "href": "https://core.telegram.org/bots/api#stickerset",
       "description": [
         "This object represents a sticker set."
       ],
@@ -10150,7 +10150,7 @@
     },
     "MaskPosition": {
       "name": "MaskPosition",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#maskposition",
+      "href": "https://core.telegram.org/bots/api#maskposition",
       "description": [
         "This object describes the position on faces where a mask should be placed by default."
       ],
@@ -10191,7 +10191,7 @@
     },
     "InlineQuery": {
       "name": "InlineQuery",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inlinequery",
+      "href": "https://core.telegram.org/bots/api#inlinequery",
       "description": [
         "This object represents an incoming inline query. When the user sends an empty query, your bot could return some default or trending results."
       ],
@@ -10248,7 +10248,7 @@
     },
     "InlineQueryResult": {
       "name": "InlineQueryResult",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inlinequeryresult",
+      "href": "https://core.telegram.org/bots/api#inlinequeryresult",
       "description": [
         "This object represents one result of an inline query. Telegram clients currently support results of the following 20 types:",
         "- InlineQueryResultCachedAudio",
@@ -10298,7 +10298,7 @@
     },
     "InlineQueryResultArticle": {
       "name": "InlineQueryResultArticle",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inlinequeryresultarticle",
+      "href": "https://core.telegram.org/bots/api#inlinequeryresultarticle",
       "description": [
         "Represents a link to an article or web page."
       ],
@@ -10398,7 +10398,7 @@
     },
     "InlineQueryResultPhoto": {
       "name": "InlineQueryResultPhoto",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inlinequeryresultphoto",
+      "href": "https://core.telegram.org/bots/api#inlinequeryresultphoto",
       "description": [
         "Represents a link to a photo. By default, this photo will be sent by the user with optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the photo."
       ],
@@ -10514,7 +10514,7 @@
     },
     "InlineQueryResultGif": {
       "name": "InlineQueryResultGif",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inlinequeryresultgif",
+      "href": "https://core.telegram.org/bots/api#inlinequeryresultgif",
       "description": [
         "Represents a link to an animated GIF file. By default, this animated GIF file will be sent by the user with optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the animation."
       ],
@@ -10638,7 +10638,7 @@
     },
     "InlineQueryResultMpeg4Gif": {
       "name": "InlineQueryResultMpeg4Gif",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inlinequeryresultmpeg4gif",
+      "href": "https://core.telegram.org/bots/api#inlinequeryresultmpeg4gif",
       "description": [
         "Represents a link to a video animation (H.264/MPEG-4 AVC video without sound). By default, this animated MPEG-4 file will be sent by the user with optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the animation."
       ],
@@ -10762,7 +10762,7 @@
     },
     "InlineQueryResultVideo": {
       "name": "InlineQueryResultVideo",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inlinequeryresultvideo",
+      "href": "https://core.telegram.org/bots/api#inlinequeryresultvideo",
       "description": [
         "Represents a link to a page containing an embedded video player or a video file. By default, this video file will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the video."
       ],
@@ -10894,7 +10894,7 @@
     },
     "InlineQueryResultAudio": {
       "name": "InlineQueryResultAudio",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inlinequeryresultaudio",
+      "href": "https://core.telegram.org/bots/api#inlinequeryresultaudio",
       "description": [
         "Represents a link to an MP3 audio file. By default, this audio file will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the audio.",
         "Note: This will only work in Telegram versions released after 9 April, 2016. Older clients will ignore them."
@@ -10995,7 +10995,7 @@
     },
     "InlineQueryResultVoice": {
       "name": "InlineQueryResultVoice",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inlinequeryresultvoice",
+      "href": "https://core.telegram.org/bots/api#inlinequeryresultvoice",
       "description": [
         "Represents a link to a voice recording in an .OGG container encoded with OPUS. By default, this voice recording will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the the voice message.",
         "Note: This will only work in Telegram versions released after 9 April, 2016. Older clients will ignore them."
@@ -11088,7 +11088,7 @@
     },
     "InlineQueryResultDocument": {
       "name": "InlineQueryResultDocument",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inlinequeryresultdocument",
+      "href": "https://core.telegram.org/bots/api#inlinequeryresultdocument",
       "description": [
         "Represents a link to a file. By default, this file will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the file. Currently, only .PDF and .ZIP files can be sent using this method.",
         "Note: This will only work in Telegram versions released after 9 April, 2016. Older clients will ignore them."
@@ -11213,7 +11213,7 @@
     },
     "InlineQueryResultLocation": {
       "name": "InlineQueryResultLocation",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inlinequeryresultlocation",
+      "href": "https://core.telegram.org/bots/api#inlinequeryresultlocation",
       "description": [
         "Represents a location on a map. By default, the location will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the location.",
         "Note: This will only work in Telegram versions released after 9 April, 2016. Older clients will ignore them."
@@ -11338,7 +11338,7 @@
     },
     "InlineQueryResultVenue": {
       "name": "InlineQueryResultVenue",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inlinequeryresultvenue",
+      "href": "https://core.telegram.org/bots/api#inlinequeryresultvenue",
       "description": [
         "Represents a venue. By default, the venue will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the venue.",
         "Note: This will only work in Telegram versions released after 9 April, 2016. Older clients will ignore them."
@@ -11471,7 +11471,7 @@
     },
     "InlineQueryResultContact": {
       "name": "InlineQueryResultContact",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inlinequeryresultcontact",
+      "href": "https://core.telegram.org/bots/api#inlinequeryresultcontact",
       "description": [
         "Represents a contact with a phone number. By default, this contact will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the contact.",
         "Note: This will only work in Telegram versions released after 9 April, 2016. Older clients will ignore them."
@@ -11572,7 +11572,7 @@
     },
     "InlineQueryResultGame": {
       "name": "InlineQueryResultGame",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inlinequeryresultgame",
+      "href": "https://core.telegram.org/bots/api#inlinequeryresultgame",
       "description": [
         "Represents a Game.",
         "Note: This will only work in Telegram versions released after October 1, 2016. Older clients will not display any inline results if a game result is among them."
@@ -11617,7 +11617,7 @@
     },
     "InlineQueryResultCachedPhoto": {
       "name": "InlineQueryResultCachedPhoto",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inlinequeryresultcachedphoto",
+      "href": "https://core.telegram.org/bots/api#inlinequeryresultcachedphoto",
       "description": [
         "Represents a link to a photo stored on the Telegram servers. By default, this photo will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the photo."
       ],
@@ -11709,7 +11709,7 @@
     },
     "InlineQueryResultCachedGif": {
       "name": "InlineQueryResultCachedGif",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inlinequeryresultcachedgif",
+      "href": "https://core.telegram.org/bots/api#inlinequeryresultcachedgif",
       "description": [
         "Represents a link to an animated GIF file stored on the Telegram servers. By default, this animated GIF file will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with specified content instead of the animation."
       ],
@@ -11793,7 +11793,7 @@
     },
     "InlineQueryResultCachedMpeg4Gif": {
       "name": "InlineQueryResultCachedMpeg4Gif",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inlinequeryresultcachedmpeg4gif",
+      "href": "https://core.telegram.org/bots/api#inlinequeryresultcachedmpeg4gif",
       "description": [
         "Represents a link to a video animation (H.264/MPEG-4 AVC video without sound) stored on the Telegram servers. By default, this animated MPEG-4 file will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the animation."
       ],
@@ -11877,7 +11877,7 @@
     },
     "InlineQueryResultCachedSticker": {
       "name": "InlineQueryResultCachedSticker",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inlinequeryresultcachedsticker",
+      "href": "https://core.telegram.org/bots/api#inlinequeryresultcachedsticker",
       "description": [
         "Represents a link to a sticker stored on the Telegram servers. By default, this sticker will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the sticker.",
         "Note: This will only work in Telegram versions released after 9 April, 2016 for static stickers and after 06 July, 2019 for animated stickers. Older clients will ignore them."
@@ -11930,7 +11930,7 @@
     },
     "InlineQueryResultCachedDocument": {
       "name": "InlineQueryResultCachedDocument",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inlinequeryresultcacheddocument",
+      "href": "https://core.telegram.org/bots/api#inlinequeryresultcacheddocument",
       "description": [
         "Represents a link to a file stored on the Telegram servers. By default, this file will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the file.",
         "Note: This will only work in Telegram versions released after 9 April, 2016. Older clients will ignore them."
@@ -12023,7 +12023,7 @@
     },
     "InlineQueryResultCachedVideo": {
       "name": "InlineQueryResultCachedVideo",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inlinequeryresultcachedvideo",
+      "href": "https://core.telegram.org/bots/api#inlinequeryresultcachedvideo",
       "description": [
         "Represents a link to a video file stored on the Telegram servers. By default, this video file will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the video."
       ],
@@ -12115,7 +12115,7 @@
     },
     "InlineQueryResultCachedVoice": {
       "name": "InlineQueryResultCachedVoice",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inlinequeryresultcachedvoice",
+      "href": "https://core.telegram.org/bots/api#inlinequeryresultcachedvoice",
       "description": [
         "Represents a link to a voice message stored on the Telegram servers. By default, this voice message will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the voice message.",
         "Note: This will only work in Telegram versions released after 9 April, 2016. Older clients will ignore them."
@@ -12200,7 +12200,7 @@
     },
     "InlineQueryResultCachedAudio": {
       "name": "InlineQueryResultCachedAudio",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inlinequeryresultcachedaudio",
+      "href": "https://core.telegram.org/bots/api#inlinequeryresultcachedaudio",
       "description": [
         "Represents a link to an MP3 audio file stored on the Telegram servers. By default, this audio file will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the audio.",
         "Note: This will only work in Telegram versions released after 9 April, 2016. Older clients will ignore them."
@@ -12277,7 +12277,7 @@
     },
     "InputMessageContent": {
       "name": "InputMessageContent",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inputmessagecontent",
+      "href": "https://core.telegram.org/bots/api#inputmessagecontent",
       "description": [
         "This object represents the content of a message to be sent as a result of an inline query. Telegram clients currently support the following 5 types:",
         "- InputTextMessageContent",
@@ -12296,7 +12296,7 @@
     },
     "InputTextMessageContent": {
       "name": "InputTextMessageContent",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inputtextmessagecontent",
+      "href": "https://core.telegram.org/bots/api#inputtextmessagecontent",
       "description": [
         "Represents the content of a text message to be sent as the result of an inline query."
       ],
@@ -12340,7 +12340,7 @@
     },
     "InputLocationMessageContent": {
       "name": "InputLocationMessageContent",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inputlocationmessagecontent",
+      "href": "https://core.telegram.org/bots/api#inputlocationmessagecontent",
       "description": [
         "Represents the content of a location message to be sent as the result of an inline query."
       ],
@@ -12400,7 +12400,7 @@
     },
     "InputVenueMessageContent": {
       "name": "InputVenueMessageContent",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inputvenuemessagecontent",
+      "href": "https://core.telegram.org/bots/api#inputvenuemessagecontent",
       "description": [
         "Represents the content of a venue message to be sent as the result of an inline query."
       ],
@@ -12476,7 +12476,7 @@
     },
     "InputContactMessageContent": {
       "name": "InputContactMessageContent",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inputcontactmessagecontent",
+      "href": "https://core.telegram.org/bots/api#inputcontactmessagecontent",
       "description": [
         "Represents the content of a contact message to be sent as the result of an inline query."
       ],
@@ -12520,7 +12520,7 @@
     },
     "InputInvoiceMessageContent": {
       "name": "InputInvoiceMessageContent",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#inputinvoicemessagecontent",
+      "href": "https://core.telegram.org/bots/api#inputinvoicemessagecontent",
       "description": [
         "Represents the content of an invoice message to be sent as the result of an inline query."
       ],
@@ -12692,7 +12692,7 @@
     },
     "ChosenInlineResult": {
       "name": "ChosenInlineResult",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#choseninlineresult",
+      "href": "https://core.telegram.org/bots/api#choseninlineresult",
       "description": [
         "Represents a result of an inline query that was chosen by the user and sent to their chat partner.",
         "Note: It is necessary to enable inline feedback via @BotFather in order to receive these objects in updates."
@@ -12742,7 +12742,7 @@
     },
     "SentWebAppMessage": {
       "name": "SentWebAppMessage",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#sentwebappmessage",
+      "href": "https://core.telegram.org/bots/api#sentwebappmessage",
       "description": [
         "Describes an inline message sent by a Web App on behalf of a user."
       ],
@@ -12759,7 +12759,7 @@
     },
     "LabeledPrice": {
       "name": "LabeledPrice",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#labeledprice",
+      "href": "https://core.telegram.org/bots/api#labeledprice",
       "description": [
         "This object represents a portion of the price for goods or services."
       ],
@@ -12784,7 +12784,7 @@
     },
     "Invoice": {
       "name": "Invoice",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#invoice",
+      "href": "https://core.telegram.org/bots/api#invoice",
       "description": [
         "This object contains basic information about an invoice."
       ],
@@ -12833,7 +12833,7 @@
     },
     "ShippingAddress": {
       "name": "ShippingAddress",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#shippingaddress",
+      "href": "https://core.telegram.org/bots/api#shippingaddress",
       "description": [
         "This object represents a shipping address."
       ],
@@ -12890,7 +12890,7 @@
     },
     "OrderInfo": {
       "name": "OrderInfo",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#orderinfo",
+      "href": "https://core.telegram.org/bots/api#orderinfo",
       "description": [
         "This object represents information about an order."
       ],
@@ -12931,7 +12931,7 @@
     },
     "ShippingOption": {
       "name": "ShippingOption",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#shippingoption",
+      "href": "https://core.telegram.org/bots/api#shippingoption",
       "description": [
         "This object represents one shipping option."
       ],
@@ -12964,7 +12964,7 @@
     },
     "SuccessfulPayment": {
       "name": "SuccessfulPayment",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#successfulpayment",
+      "href": "https://core.telegram.org/bots/api#successfulpayment",
       "description": [
         "This object contains basic information about a successful payment."
       ],
@@ -13029,7 +13029,7 @@
     },
     "ShippingQuery": {
       "name": "ShippingQuery",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#shippingquery",
+      "href": "https://core.telegram.org/bots/api#shippingquery",
       "description": [
         "This object contains information about an incoming shipping query."
       ],
@@ -13070,7 +13070,7 @@
     },
     "PreCheckoutQuery": {
       "name": "PreCheckoutQuery",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#precheckoutquery",
+      "href": "https://core.telegram.org/bots/api#precheckoutquery",
       "description": [
         "This object contains information about an incoming pre-checkout query."
       ],
@@ -13135,7 +13135,7 @@
     },
     "PassportData": {
       "name": "PassportData",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#passportdata",
+      "href": "https://core.telegram.org/bots/api#passportdata",
       "description": [
         "Describes Telegram Passport data shared with the bot by the user."
       ],
@@ -13160,7 +13160,7 @@
     },
     "PassportFile": {
       "name": "PassportFile",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#passportfile",
+      "href": "https://core.telegram.org/bots/api#passportfile",
       "description": [
         "This object represents a file uploaded to Telegram Passport. Currently all Telegram Passport files are in JPEG format when decrypted and don't exceed 10MB."
       ],
@@ -13201,7 +13201,7 @@
     },
     "EncryptedPassportElement": {
       "name": "EncryptedPassportElement",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#encryptedpassportelement",
+      "href": "https://core.telegram.org/bots/api#encryptedpassportelement",
       "description": [
         "Describes documents or other Telegram Passport elements shared with the bot by the user."
       ],
@@ -13290,7 +13290,7 @@
     },
     "EncryptedCredentials": {
       "name": "EncryptedCredentials",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#encryptedcredentials",
+      "href": "https://core.telegram.org/bots/api#encryptedcredentials",
       "description": [
         "Describes data required for decrypting and authenticating EncryptedPassportElement. See the Telegram Passport Documentation for a complete description of the data decryption and authentication processes."
       ],
@@ -13323,7 +13323,7 @@
     },
     "PassportElementError": {
       "name": "PassportElementError",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#passportelementerror",
+      "href": "https://core.telegram.org/bots/api#passportelementerror",
       "description": [
         "This object represents an error in the Telegram Passport element which was submitted that should be resolved by the user. It should be one of:",
         "- PassportElementErrorDataField",
@@ -13350,7 +13350,7 @@
     },
     "PassportElementErrorDataField": {
       "name": "PassportElementErrorDataField",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#passportelementerrordatafield",
+      "href": "https://core.telegram.org/bots/api#passportelementerrordatafield",
       "description": [
         "Represents an issue in one of the data fields that was provided by the user. The error is considered resolved when the field's value changes."
       ],
@@ -13402,7 +13402,7 @@
     },
     "PassportElementErrorFrontSide": {
       "name": "PassportElementErrorFrontSide",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#passportelementerrorfrontside",
+      "href": "https://core.telegram.org/bots/api#passportelementerrorfrontside",
       "description": [
         "Represents an issue with the front side of a document. The error is considered resolved when the file with the front side of the document changes."
       ],
@@ -13446,7 +13446,7 @@
     },
     "PassportElementErrorReverseSide": {
       "name": "PassportElementErrorReverseSide",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#passportelementerrorreverseside",
+      "href": "https://core.telegram.org/bots/api#passportelementerrorreverseside",
       "description": [
         "Represents an issue with the reverse side of a document. The error is considered resolved when the file with reverse side of the document changes."
       ],
@@ -13490,7 +13490,7 @@
     },
     "PassportElementErrorSelfie": {
       "name": "PassportElementErrorSelfie",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#passportelementerrorselfie",
+      "href": "https://core.telegram.org/bots/api#passportelementerrorselfie",
       "description": [
         "Represents an issue with the selfie with a document. The error is considered resolved when the file with the selfie changes."
       ],
@@ -13534,7 +13534,7 @@
     },
     "PassportElementErrorFile": {
       "name": "PassportElementErrorFile",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#passportelementerrorfile",
+      "href": "https://core.telegram.org/bots/api#passportelementerrorfile",
       "description": [
         "Represents an issue with a document scan. The error is considered resolved when the file with the document scan changes."
       ],
@@ -13578,7 +13578,7 @@
     },
     "PassportElementErrorFiles": {
       "name": "PassportElementErrorFiles",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#passportelementerrorfiles",
+      "href": "https://core.telegram.org/bots/api#passportelementerrorfiles",
       "description": [
         "Represents an issue with a list of scans. The error is considered resolved when the list of files containing the scans changes."
       ],
@@ -13622,7 +13622,7 @@
     },
     "PassportElementErrorTranslationFile": {
       "name": "PassportElementErrorTranslationFile",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#passportelementerrortranslationfile",
+      "href": "https://core.telegram.org/bots/api#passportelementerrortranslationfile",
       "description": [
         "Represents an issue with one of the files that constitute the translation of a document. The error is considered resolved when the file changes."
       ],
@@ -13666,7 +13666,7 @@
     },
     "PassportElementErrorTranslationFiles": {
       "name": "PassportElementErrorTranslationFiles",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#passportelementerrortranslationfiles",
+      "href": "https://core.telegram.org/bots/api#passportelementerrortranslationfiles",
       "description": [
         "Represents an issue with the translated version of a document. The error is considered resolved when a file with the document translation change."
       ],
@@ -13710,7 +13710,7 @@
     },
     "PassportElementErrorUnspecified": {
       "name": "PassportElementErrorUnspecified",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#passportelementerrorunspecified",
+      "href": "https://core.telegram.org/bots/api#passportelementerrorunspecified",
       "description": [
         "Represents an issue in an unspecified place. The error is considered resolved when new data is added."
       ],
@@ -13754,7 +13754,7 @@
     },
     "Game": {
       "name": "Game",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#game",
+      "href": "https://core.telegram.org/bots/api#game",
       "description": [
         "This object represents a game. Use BotFather to create and edit games, their short names will act as unique identifiers."
       ],
@@ -13811,14 +13811,14 @@
     },
     "CallbackGame": {
       "name": "CallbackGame",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#callbackgame",
+      "href": "https://core.telegram.org/bots/api#callbackgame",
       "description": [
         "A placeholder, currently holds no information. Use BotFather to set up your game."
       ]
     },
     "GameHighScore": {
       "name": "GameHighScore",
-      "href": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api#gamehighscore",
+      "href": "https://core.telegram.org/bots/api#gamehighscore",
       "description": [
         "This object represents one row of the high scores table for a game."
       ],
