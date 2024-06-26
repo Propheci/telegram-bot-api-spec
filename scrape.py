@@ -10,7 +10,8 @@ TG_CORE_TYPES = ["String", "Boolean", "Integer", "Float"]
 ROOT_URL = "https://core.telegram.org"
 TO_SCRAPE = {
     "api": ROOT_URL + "/bots/api",
-    # "archive/api_v7.3": "https://web.archive.org/web/20240518005603/https://core.telegram.org/bots/api",
+    # "archive/api_v7.4": "https://web.archive.org/web/20240613221320/https://core.telegram.org/bots/api",
+    # "archive/api_v7.3": "https://web.archive.org/web/20240525203317/https://core.telegram.org/bots/api",
     # "archive/api_v7.2": "https://web.archive.org/web/20240505111121/https://core.telegram.org/bots/api",
     # "archive/api_v7.1": "https://web.archive.org/web/20240330191302/https://core.telegram.org/bots/api",
     # "archive/api_v7.0": "https://web.archive.org/web/20240211214355/https://core.telegram.org/bots/api",
