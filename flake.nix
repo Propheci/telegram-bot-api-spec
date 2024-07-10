@@ -13,6 +13,7 @@
     devShell."${system}" = mkShell {
       name = "tg-bot-api-spec";
       nativeBuildInputs = [
+        basedpyright
         (python312.withPackages (p: [
           p.requests
           p.html5lib

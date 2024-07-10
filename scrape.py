@@ -10,21 +10,23 @@ TG_CORE_TYPES = ["String", "Boolean", "Integer", "Float"]
 ROOT_URL = "https://core.telegram.org"
 TO_SCRAPE = {
     "api": ROOT_URL + "/bots/api",
-    # "archive/api_v7.4": "https://web.archive.org/web/20240613221320/https://core.telegram.org/bots/api",
-    # "archive/api_v7.3": "https://web.archive.org/web/20240525203317/https://core.telegram.org/bots/api",
-    # "archive/api_v7.2": "https://web.archive.org/web/20240505111121/https://core.telegram.org/bots/api",
-    # "archive/api_v7.1": "https://web.archive.org/web/20240330191302/https://core.telegram.org/bots/api",
-    # "archive/api_v7.0": "https://web.archive.org/web/20240211214355/https://core.telegram.org/bots/api",
-    # "archive/api_v6.9": "https://web.archive.org/web/20231223070056/https://core.telegram.org/bots/api",
-    # "archive/api_v6.8": "https://web.archive.org/web/20230826065455/https://core.telegram.org/bots/api",
-    # "archive/api_v6.7": "https://web.archive.org/web/20230810123021/https://core.telegram.org/bots/api",
-    # "archive/api_v6.6": "https://web.archive.org/web/20230417123110/https://core.telegram.org/bots/api",
-    # "archive/api_v6.5": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api",
-    # "archive/api_v6.4": "https://web.archive.org/web/20230202140617/https://core.telegram.org/bots/api",
-    # "archive/api_v6.3": "https://web.archive.org/web/20221224084520/https://core.telegram.org/bots/api",
-    # "archive/api_v6.2": "https://web.archive.org/web/20221103211250/https://core.telegram.org/bots/api",
-    # "archive/api_v6.1": "https://web.archive.org/web/20220811122956/https://core.telegram.org/bots/api",
-    # "archive/api_v6.0": "https://web.archive.org/web/20220615162534/https://core.telegram.org/bots/api",
+    "archive/api_v7.6": "https://web.archive.org/web/20240707025106/https://core.telegram.org/bots/api",
+    "archive/api_v7.5": "https://web.archive.org/web/20240630052912/https://core.telegram.org/bots/api",
+    "archive/api_v7.4": "https://web.archive.org/web/20240613221320/https://core.telegram.org/bots/api",
+    "archive/api_v7.3": "https://web.archive.org/web/20240525203317/https://core.telegram.org/bots/api",
+    "archive/api_v7.2": "https://web.archive.org/web/20240505111121/https://core.telegram.org/bots/api",
+    "archive/api_v7.1": "https://web.archive.org/web/20240330191302/https://core.telegram.org/bots/api",
+    "archive/api_v7.0": "https://web.archive.org/web/20240211214355/https://core.telegram.org/bots/api",
+    "archive/api_v6.9": "https://web.archive.org/web/20231223070056/https://core.telegram.org/bots/api",
+    "archive/api_v6.8": "https://web.archive.org/web/20230826065455/https://core.telegram.org/bots/api",
+    "archive/api_v6.7": "https://web.archive.org/web/20230810123021/https://core.telegram.org/bots/api",
+    "archive/api_v6.6": "https://web.archive.org/web/20230417123110/https://core.telegram.org/bots/api",
+    "archive/api_v6.5": "https://web.archive.org/web/20230307102441/https://core.telegram.org/bots/api",
+    "archive/api_v6.4": "https://web.archive.org/web/20230202140617/https://core.telegram.org/bots/api",
+    "archive/api_v6.3": "https://web.archive.org/web/20221224084520/https://core.telegram.org/bots/api",
+    "archive/api_v6.2": "https://web.archive.org/web/20221103211250/https://core.telegram.org/bots/api",
+    "archive/api_v6.1": "https://web.archive.org/web/20220811122956/https://core.telegram.org/bots/api",
+    "archive/api_v6.0": "https://web.archive.org/web/20220615162534/https://core.telegram.org/bots/api",
 }
 
 METHODS = "methods"
@@ -224,7 +226,10 @@ def clean_tg_description(t: Tag, url: str) -> list[str]:
             link = url + link
         # Domain-relative URL
         elif link.startswith("/"):
-            link = ROOT_URL + link
+            if link.startswith("/web/"):
+                link = link[20:]
+            else:
+                link = ROOT_URL + link
 
         anchor_text = anchor_text.replace(" »", ": " + link)
         a.replace_with(anchor_text)

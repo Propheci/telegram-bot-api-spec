@@ -6785,7 +6785,7 @@
             "String"
           ],
           "required": false,
-          "description": "Optional. The domain name of the website on which the user has logged in. More about Telegram Login: https://core.telegram.org/web/20240211214355/https://core.telegram.org/widgets/login"
+          "description": "Optional. The domain name of the website on which the user has logged in. More about Telegram Login: https://core.telegram.org/widgets/login"
         },
         {
           "name": "write_access_allowed",
@@ -9168,7 +9168,7 @@
       "name": "KeyboardButtonRequestUsers",
       "href": "https://core.telegram.org/bots/api#keyboardbuttonrequestusers",
       "description": [
-        "This object defines the criteria used to request suitable users. The identifiers of the selected users will be shared with the bot when the corresponding button is pressed. More about requesting users: https://core.telegram.org/web/20240211214355/https://core.telegram.org/bots/features#chat-and-user-selection"
+        "This object defines the criteria used to request suitable users. The identifiers of the selected users will be shared with the bot when the corresponding button is pressed. More about requesting users: https://core.telegram.org/bots/features#chat-and-user-selection"
       ],
       "fields": [
         {
@@ -9209,7 +9209,7 @@
       "name": "KeyboardButtonRequestChat",
       "href": "https://core.telegram.org/bots/api#keyboardbuttonrequestchat",
       "description": [
-        "This object defines the criteria used to request a suitable chat. The identifier of the selected chat will be shared with the bot when the corresponding button is pressed. More about requesting chats: https://core.telegram.org/web/20240211214355/https://core.telegram.org/bots/features#chat-and-user-selection"
+        "This object defines the criteria used to request a suitable chat. The identifier of the selected chat will be shared with the bot when the corresponding button is pressed. More about requesting chats: https://core.telegram.org/bots/features#chat-and-user-selection"
       ],
       "fields": [
         {

@@ -5661,7 +5661,7 @@
             "String"
           ],
           "required": false,
-          "description": "Optional. The domain name of the website on which the user has logged in. More about Telegram Login: https://core.telegram.org/web/20220811122956/https://core.telegram.org/widgets/login"
+          "description": "Optional. The domain name of the website on which the user has logged in. More about Telegram Login: https://core.telegram.org/widgets/login"
         },
         {
           "name": "passport_data",
